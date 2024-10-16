@@ -18,7 +18,11 @@ public class WrivesTest {
     public void testConstructor() {
         assertNotNull(wrives);
         assertEquals(1, wrives.getCantidadAtaques());
+<<<<<<< HEAD
         assertFalse(wrives.getRehusaAtacar());       
+=======
+        assertFalse(wrives.rehusaAtacar());       
+>>>>>>> 6616680ded6fb8b34d044cee7893dbe0138997a6
     }
 	
 	@Test
@@ -50,8 +54,15 @@ public class WrivesTest {
 	public void testDescansar() {
 	    wrives.descansar();
 	    assertEquals(158, wrives.getSaludMaxima()); 
+<<<<<<< HEAD
 	    assertTrue(wrives.getRehusaAtacar());
 	}
 
 }
 
+=======
+	    assertTrue(wrives.rehusaAtacar());
+	}
+
+}
+>>>>>>> 6616680ded6fb8b34d044cee7893dbe0138997a6
