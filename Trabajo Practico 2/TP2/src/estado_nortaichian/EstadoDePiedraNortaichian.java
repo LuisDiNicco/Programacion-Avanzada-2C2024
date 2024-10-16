@@ -7,27 +7,18 @@ public class EstadoDePiedraNortaichian implements EstadoNortaichian {
 	@Override
 	public int atacar(Nortaichian origen) {
 		origen.curarse(4);
-		int daño = origen.getDañoBase();
-		System.out.println("Nortaichian ataca con " + daño + " puntos de daño!");
-		return daño;
+		int dañoPetrificado = 0;
+		return dañoPetrificado;
 	}
 
 	@Override
 	public void recibirAtaque(Nortaichian origen, int daño) {
-		int salud = origen.getSalud();
-		salud -= daño;
-		if (salud > 0) {
-			System.out.println(
-					"NortEstadoNormalNortaichianaichian recibe " + daño + " puntos de daño. Salud restante: " + salud);
-		} else {
-			System.out.println(
-					"Nortaichian recibe " + daño + " puntos de daño. Su salud era de: " + salud + ". Ha muerto! ");
-		}
+		int dañoReducido = daño/2;
+		origen.bajarSalud(dañoReducido);
 	}
 
 	@Override
 	public void descansar(Nortaichian origen) {
-		System.out.println("Nortaichian descansa.");
 		origen.curarse(100);
 	}
 

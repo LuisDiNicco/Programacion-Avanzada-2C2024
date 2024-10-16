@@ -34,10 +34,10 @@ public class Ejercito {
 		guerrero.recibirAtaque(daño);
 
 		if (guerrero.getSalud() < 0) {
-			this.ejercito.removeFirst();
+			this.ejercito.remove(guerrero);
 			this.tamaño--;
 		}
-	}
+}
 
 	public void reordenarse() {
 		Raza guerrero = this.getPrimero();
@@ -64,7 +64,7 @@ public class Ejercito {
 			this.tamaño++;
 		}
 	}
-	
+
 	public int getTamaño() {
 		return tamaño;
 	}

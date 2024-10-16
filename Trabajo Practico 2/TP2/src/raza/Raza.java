@@ -1,19 +1,23 @@
 package raza;
 
+import archivo.LogWriter;
+
 public abstract class Raza {
-	//protected String nombre;
-	private NombreRaza nombreRaza;
+	// Esto esta bien??
+	protected final LogWriter logWriter = LogWriter.getInstancia();
+	
+	protected NombreRaza nombreRaza;
 	protected int salud;
 	protected int saludMaxima;
-	protected int dañoBasico;
+	protected int dañoBase;
 	protected int rangoMinimo;
 	protected int rangoMaximo;
 
-	public Raza(NombreRaza nombre, int salud, int saludMaxima, int dañoBasico, int rangoMinimo, int rangoMaximo) {
+	public Raza(NombreRaza nombre, int salud, int saludMaxima, int dañoBase, int rangoMinimo, int rangoMaximo) {
 		this.nombreRaza = nombre;
 		this.salud = salud;
 		this.saludMaxima = saludMaxima;
-		this.dañoBasico = dañoBasico;
+		this.dañoBase = dañoBase;
 		this.rangoMinimo = rangoMinimo;
 		this.rangoMaximo = rangoMaximo;
 	}
@@ -24,8 +28,6 @@ public abstract class Raza {
 
 	public abstract void descansar();
 	
-	//public abstract Raza crearRaza();
-
 	public String getNombreRaza() {
 		return nombreRaza.name();
 	}
@@ -38,8 +40,8 @@ public abstract class Raza {
 		return saludMaxima;
 	}
 
-	public int getDañoBasico() {
-		return dañoBasico;
+	public int getDañoBase() {
+		return dañoBase;
 	}
 
 	public int getRangoMinimo() {

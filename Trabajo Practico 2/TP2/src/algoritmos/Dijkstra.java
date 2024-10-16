@@ -40,7 +40,8 @@ public class Dijkstra {
 		int NodoActual = nodoOrigen;
 		while (w != -1) {
 
-			predecesores[NodoActual] = w;
+			//predecesores[NodoActual] = w;
+			predecesores[w] = NodoActual;
 			visitado[w] = true;
 
 			for (int i = 0; i < cantNodos; i++) {

@@ -1,43 +1,44 @@
 package raza;
 
 public class Radaiteran extends Raza {
+	private static final NombreRaza nombreRazaRadaiteran = NombreRaza.RADAITERAN;
+	private static final int saludMaximaRadaiteran = 36;
+	private static final int rangoMinRadaiteran = 17;
+	private static final int rangoMaxRadaiteran = 41;
+	private static final int dañoBaseRadaiteran = 56;
+	
 	private int cantidadAtaques;
-	//private static String nombre = "Radaiteran";
-	private static NombreRaza nombreRaza = NombreRaza.RADAITERAN;
-	private static int salud = 36;
-	private static int rangoMin = 17;
-	private static int rangoMax = 41;
-	private static int dañoBase = 56;
 
 	public Radaiteran() {
-		super(nombreRaza, salud, salud, rangoMin, rangoMax, dañoBase);
+		super(nombreRazaRadaiteran, saludMaximaRadaiteran, saludMaximaRadaiteran, rangoMinRadaiteran, rangoMaxRadaiteran, dañoBaseRadaiteran);
 		this.cantidadAtaques = 0;
 	}
 
 	@Override
 	public int atacar() {
 		int dañoExtra = 3 * cantidadAtaques;
-		int dañoTotal = dañoBase + dañoExtra;
-		System.out.println("Radaiteran ataca con " + dañoTotal + " puntos de daño!");
-		// objetivo.recibirAtaque(dañoTotal);
+		int dañoTotal = dañoBaseRadaiteran + dañoExtra;
+		logWriter.escribirLog("\t-Radaiteran ataca con " + dañoTotal + " puntos de daño!");
+		//objetivo.recibirAtaque(dañoTotal);
 		cantidadAtaques++;
 		return dañoTotal;
 	}
+
 
 	@Override
 	public void recibirAtaque(int daño) {
 		salud -= daño;
 		if (salud > 0) {
-			System.out.println("Radaiteran recibe " + daño + " puntos de daño. Salud restante: " + salud);
+			logWriter.escribirLog("\t\t--Radaiteran recibe " + daño + " puntos de daño. Salud restante: " + salud);
 		} else {
-			System.out.println(
-					"Radaiteran recibe " + daño + " puntos de daño. Su salud era de: " + salud + ". Ha muerto! ");
+			logWriter.escribirLog(
+					"\t\t--Radaiteran recibe " + daño + " puntos de daño. Su salud era de: " + salud + ". Ha muerto! ");
 		}
 	}
 
 	@Override
 	public void descansar() {
-		System.out.println("Radaiteran descansa. No sucede nada.");
+		logWriter.escribirLog("\t-Radaiteran descansa. No sucede nada.");
 	}
-	
+
 }

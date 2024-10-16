@@ -1,28 +1,28 @@
 package raza;
 
 public class Reralopes extends Raza {
+	private static final NombreRaza nombreRazaReralopes = NombreRaza.RERALOPES;
+	private static final int saludMaximaReralopes = 53;
+	private static final int rangoMinReralopes = 5;
+	private static final int rangoMaxReralopes = 46;
+	private static final int dañoBaseReralopes = 27;
+
 	private boolean concentrado;
 	private int cantidadAtaquesConcentrado;
 
-	//private static String nombre = "Reralopes";
-	private static NombreRaza nombreRaza = NombreRaza.RERALOPES;
-	private static int salud = 53;
-	private static int rangoMin = 5;
-	private static int rangoMax = 46;
-	private static int dañoBase = 27;
-
 	public Reralopes() {
-		super(nombreRaza, salud, salud, rangoMin, rangoMax, dañoBase);
+		super(nombreRazaReralopes, saludMaximaReralopes, saludMaximaReralopes, rangoMinReralopes, rangoMaxReralopes,
+				dañoBaseReralopes);
 		this.concentrado = false;
 		this.cantidadAtaquesConcentrado = 0;
 	}
 
 	@Override
 	public int atacar() {
-		int dañoTotal = dañoBase;
+		int dañoTotal = this.dañoBase;
 
 		if (concentrado == true) {
-			dañoTotal = dañoBase * 2;
+			dañoTotal = dañoBaseReralopes * 2;
 			this.cantidadAtaquesConcentrado++;
 		}
 
@@ -31,7 +31,7 @@ public class Reralopes extends Raza {
 			this.cantidadAtaquesConcentrado = 0;
 		}
 
-		System.out.println("Reralopes ataca con " + dañoTotal + " puntos de daño!");
+		logWriter.escribirLog("\t-Reralopes ataca con " + dañoTotal + " puntos de daño!");
 		// objetivo.recibirAtaque(dañoTotal);
 		return dañoTotal;
 	}
@@ -40,17 +40,24 @@ public class Reralopes extends Raza {
 	public void recibirAtaque(int daño) {
 		salud -= daño;
 		if (salud > 0) {
-			System.out.println("Reralopes recibe " + daño + " puntos de daño. Salud restante: " + salud);
+			logWriter.escribirLog("\t\t--Reralopes recibe " + daño + " puntos de daño. Salud restante: " + salud);
 		} else {
-			System.out.println(
-					"Reralopes recibe " + daño + " puntos de daño. Su salud era de: " + salud + ". Ha muerto! ");
+			logWriter.escribirLog(
+					"\t\t--Reralopes recibe " + daño + " puntos de daño. Su salud era de: " + salud + ". Ha muerto! ");
 		}
 	}
 
 	@Override
 	public void descansar() {
 		this.concentrado = true;
-		System.out.println("Reralopes ha descansado para concentrarse.");
+		logWriter.escribirLog("\t-Reralopes se ha concentrado.");
 	}
 
+	public boolean isConcentrado() {
+		return concentrado;
+	}
+
+	public int getCantidadAtaquesConcentrado() {
+		return cantidadAtaquesConcentrado;
+	}
 }

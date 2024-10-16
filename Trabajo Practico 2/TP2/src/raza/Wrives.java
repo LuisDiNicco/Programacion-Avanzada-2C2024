@@ -1,18 +1,17 @@
 package raza;
 
 public class Wrives extends Raza {
+	private static final NombreRaza nombreRazaWrives = NombreRaza.WRIVES;
+	private static final int saludMaximaWrives = 108;
+	private static final int rangoMinWrives = 14;
+	private static final int rangoMaxWrives = 28;
+	private static final int dañoBaseWrives = 113;
+
 	private int cantidadAtaques;
 	private boolean rehusaAtacar;
-	//private static String nombre = "Wrives";
-	private static NombreRaza nombreRaza = NombreRaza.WRIVES;
-	private static int saludMaxima = 108;
-	private static int saludActual = 108;
-	private static int rangoMin = 14;
-	private static int rangoMax = 28;
-	private static int dañoBase = 113;
 
 	public Wrives() {
-		super(nombreRaza, saludActual, saludMaxima, rangoMin, rangoMax, dañoBase);
+		super(nombreRazaWrives, saludMaximaWrives, saludMaximaWrives, rangoMinWrives, rangoMaxWrives, dañoBaseWrives);
 		this.cantidadAtaques = 0;
 		this.rehusaAtacar = false;
 	}
@@ -21,7 +20,7 @@ public class Wrives extends Raza {
 	public int atacar() {
 		int daño = 0;
 		if (rehusaAtacar == false) {
-			daño = this.dañoBasico * this.cantidadAtaques;
+			daño = this.dañoBase * this.cantidadAtaques;
 
 			if (cantidadAtaques == 2) {
 				cantidadAtaques = 1;
@@ -30,30 +29,39 @@ public class Wrives extends Raza {
 			cantidadAtaques++;
 		}
 
+		logWriter.escribirLog("\t-Wrives ataca haciendo: " + daño + " de daño");
+
 		return daño;
 	}
 
 	@Override
 	public void recibirAtaque(int daño) {
 		int dañoTotal = 2 * daño;
-		saludActual -= dañoTotal;
+		salud -= dañoTotal;
 		this.rehusaAtacar = false;
 		if (salud > 0) {
-			System.out.println("Wrives recibe " + dañoTotal + " puntos de daño. Salud restante: " + saludActual);
+			logWriter.escribirLog("\t\t--Wrives recibe " + dañoTotal + " puntos de daño. Salud restante: " + salud);
 		} else {
-			System.out.println("Wrives recibe " + dañoTotal + " puntos de daño. Su salud era de: " + saludActual
-					+ ". Ha muerto! ");
+			logWriter.escribirLog(
+					"\t\t--Wrives recibe " + dañoTotal + " puntos de daño. Su salud era de: " + salud + ". Ha muerto! ");
 		}
 	}
 
 	@Override
 	public void descansar() {
-		Wrives.saludMaxima += 50;
-		Wrives.saludActual += 50;
+		this.saludMaxima += 50;
+		this.salud += 50;
 		this.rehusaAtacar = true;
-		System.out
-				.println("Wrives ha descansado para descrubrir el significado de la paz. Se rehusa a atacar primero.");
+
+		logWriter.escribirLog("\t-Wrives ha descansado para descrubrir el significado de la paz. Se rehusa a atacar primero.");
 	}
-	
+
+	public boolean getRehusaAtacar() {
+		return this.rehusaAtacar;
+	}
+
+	public int getCantidadAtaques() {
+		return this.cantidadAtaques;
+	}
 }
 
