@@ -18,18 +18,12 @@ public class Pueblo {
 		this.ejercito = new Ejercito(cantidadHabitantes);
 	}
 
+	// ---------------Metodos-------------------//
+
 	public void generarEjercito(Raza raza) {
 		for (int i = 0; i < cantidadHabitantes; i++) {
 			ejercito.agregar(nombreRaza.crearRaza());
 		}
-	}
-
-	public Ejercito getEjercito() {
-		return ejercito;
-	}
-
-	public TipoDePueblo getTipoDePueblo() {
-		return tipoDePueblo;
 	}
 
 	public boolean hayEjercito() {
@@ -40,6 +34,12 @@ public class Pueblo {
 		this.ejercito.agregarAliados(pueblo2.getEjercito(), pueblo2.getCantidadHabitantes());
 	}
 
+	// ---------------Getters-------------------//
+
+	public int getNumeroPueblo() {
+		return numeroPueblo;
+	}
+
 	public int getCantidadHabitantes() {
 		return this.cantidadHabitantes;
 	}
@@ -48,8 +48,11 @@ public class Pueblo {
 		return nombreRaza;
 	}
 
-	public int getNumeroPueblo() {
-		return numeroPueblo;
+	public TipoDePueblo getTipoDePueblo() {
+		return tipoDePueblo;
 	}
 
+	public Ejercito getEjercito() {
+		return ejercito;
+	}
 }

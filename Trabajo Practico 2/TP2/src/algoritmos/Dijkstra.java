@@ -14,6 +14,8 @@ public class Dijkstra {
 		this.distancia = new int[cantNodos];
 		this.predecesores = new int[cantNodos];
 	}
+	
+	// ---------------Metodos-------------------//
 
 	private int minimo(boolean[] visitado) {
 		int min = Integer.MAX_VALUE;
@@ -40,7 +42,6 @@ public class Dijkstra {
 		int NodoActual = nodoOrigen;
 		while (w != -1) {
 
-			//predecesores[NodoActual] = w;
 			predecesores[w] = NodoActual;
 			visitado[w] = true;
 
@@ -57,6 +58,8 @@ public class Dijkstra {
 			w = minimo(visitado);
 		}
 	}
+	
+	// ---------------Getters-------------------//
 
 	public int[] getVectorDistancia() {
 		return distancia;
@@ -71,6 +74,6 @@ public class Dijkstra {
 	}
 
 	public int getDistancia(int otroNodo) {
-		return distancia[otroNodo-1];
+		return distancia[otroNodo - 1];
 	}
 }

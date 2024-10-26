@@ -34,13 +34,13 @@ public class Archivo {
 
 		simulacion.setPueblos(pueblos);
 
-		String[] partes  = sc.nextLine().split("->");
+		String[] partes = sc.nextLine().split("->");
 		String[] camino = new String[partes.length];
 
 		for (int i = 0; i < partes.length; i++) {
-		    camino[i] = partes[i].trim(); // Elimina los espacios en blanco
+			camino[i] = partes[i].trim(); // Elimina los espacios en blanco
 		}
-		
+
 		int puebloInicio = Integer.valueOf(camino[0]);
 		int puebloFin = Integer.valueOf(camino[1]);
 

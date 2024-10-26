@@ -1,11 +1,15 @@
 package raza;
 
+import java.util.Objects;
+
 import archivo.LogWriter;
 
 public abstract class Raza {
 	// Esto esta bien??
 	protected final LogWriter logWriter = LogWriter.getInstancia();
+	protected static int id = 0;
 	
+	protected int idUnico;
 	protected NombreRaza nombreRaza;
 	protected int salud;
 	protected int saludMaxima;
@@ -20,13 +24,18 @@ public abstract class Raza {
 		this.dañoBase = dañoBase;
 		this.rangoMinimo = rangoMinimo;
 		this.rangoMaximo = rangoMaximo;
+		this.idUnico = id++;	
 	}
+	
+	// ---------------Metodos-------------------//
 
 	public abstract int atacar();
 
 	public abstract void recibirAtaque(int daño);
 
 	public abstract void descansar();
+		
+	// ---------------Getters-------------------//
 	
 	public String getNombreRaza() {
 		return nombreRaza.name();
@@ -51,6 +60,27 @@ public abstract class Raza {
 	public int getRangoMaximo() {
 		return rangoMaximo;
 	}
-	
 
+	public int getIdUnico() {
+		return idUnico;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(idUnico);
+	}
+	
+	// ---------------Metodos-------------------//
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Raza other = (Raza) obj;
+		return idUnico == other.idUnico;
+	}
 }

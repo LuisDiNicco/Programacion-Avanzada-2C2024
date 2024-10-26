@@ -6,7 +6,7 @@ public class EstadoDePiedraNortaichian implements EstadoNortaichian {
 
 	@Override
 	public int atacar(Nortaichian origen) {
-		origen.curarse(4);
+		//origen.curarse(4); Si esta petrificado no puede atacar. Solo se cura cuando ataca
 		int dañoPetrificado = 0;
 		return dañoPetrificado;
 	}
@@ -19,7 +19,7 @@ public class EstadoDePiedraNortaichian implements EstadoNortaichian {
 
 	@Override
 	public void descansar(Nortaichian origen) {
-		origen.curarse(100);
+		origen.curarse(100); // Tiene sentido que descanse cuando esta petrificado?
 	}
 
 }

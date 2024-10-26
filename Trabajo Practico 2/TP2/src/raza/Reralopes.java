@@ -31,7 +31,7 @@ public class Reralopes extends Raza {
 			this.cantidadAtaquesConcentrado = 0;
 		}
 
-		logWriter.escribirLog("\t-Reralopes ataca con " + dañoTotal + " puntos de daño!");
+		logWriter.escribirLog("\t-Reralopes [" + this.idUnico + "]  ataca con " + dañoTotal + " puntos de daño!");
 		// objetivo.recibirAtaque(dañoTotal);
 		return dañoTotal;
 	}
@@ -40,18 +40,20 @@ public class Reralopes extends Raza {
 	public void recibirAtaque(int daño) {
 		salud -= daño;
 		if (salud > 0) {
-			logWriter.escribirLog("\t\t--Reralopes recibe " + daño + " puntos de daño. Salud restante: " + salud);
+			logWriter.escribirLog("\t\t--Reralopes [" + this.idUnico + "]  recibe " + daño + " puntos de daño. Salud restante: " + salud);
 		} else {
 			logWriter.escribirLog(
-					"\t\t--Reralopes recibe " + daño + " puntos de daño. Su salud era de: " + salud + ". Ha muerto! ");
+					"\t\t--Reralopes [" + this.idUnico + "] recibe " + daño + " puntos de daño. Su salud era de: " + salud + ". Ha muerto! ");
 		}
 	}
 
 	@Override
 	public void descansar() {
 		this.concentrado = true;
-		logWriter.escribirLog("\t-Reralopes se ha concentrado.");
+		logWriter.escribirLog("\t-Reralopes [" + this.idUnico + "]  se ha concentrado.");
 	}
+
+	// ---------------Getters-------------------//
 
 	public boolean isConcentrado() {
 		return concentrado;

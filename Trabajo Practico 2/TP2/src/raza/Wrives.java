@@ -15,6 +15,8 @@ public class Wrives extends Raza {
 		this.cantidadAtaques = 0;
 		this.rehusaAtacar = false;
 	}
+	
+	// ---------------Metodos-------------------//
 
 	@Override
 	public int atacar() {
@@ -29,7 +31,7 @@ public class Wrives extends Raza {
 			cantidadAtaques++;
 		}
 
-		logWriter.escribirLog("\t-Wrives ataca haciendo: " + daño + " de daño");
+		logWriter.escribirLog("\t-Wrives [" + this.idUnico + "] ataca haciendo: " + daño + " de daño");
 
 		return daño;
 	}
@@ -40,10 +42,10 @@ public class Wrives extends Raza {
 		salud -= dañoTotal;
 		this.rehusaAtacar = false;
 		if (salud > 0) {
-			logWriter.escribirLog("\t\t--Wrives recibe " + dañoTotal + " puntos de daño. Salud restante: " + salud);
+			logWriter.escribirLog("\t\t--Wrives [" + this.idUnico + "] recibe " + dañoTotal + " puntos de daño. Salud restante: " + salud);
 		} else {
 			logWriter.escribirLog(
-					"\t\t--Wrives recibe " + dañoTotal + " puntos de daño. Su salud era de: " + salud + ". Ha muerto! ");
+					"\t\t--Wrives [" + this.idUnico + "] recibe " + dañoTotal + " puntos de daño. Su salud era de: " + salud + ". Ha muerto! ");
 		}
 	}
 
@@ -53,8 +55,10 @@ public class Wrives extends Raza {
 		this.salud += 50;
 		this.rehusaAtacar = true;
 
-		logWriter.escribirLog("\t-Wrives ha descansado para descrubrir el significado de la paz. Se rehusa a atacar primero.");
+		logWriter.escribirLog("\t-Wrives [" + this.idUnico + "] ha descansado para descrubrir el significado de la paz. Se rehusa a atacar primero.");
 	}
+	
+	// ---------------Getters-------------------//
 
 	public boolean getRehusaAtacar() {
 		return this.rehusaAtacar;

@@ -18,6 +18,8 @@ public class Nortaichian extends Raza {
 		this.cantidadTurnoEnEstado = 0;
 		this.estado = new EstadoNormalNortaichian();
 	}
+	
+	// ---------------Metodos-------------------//
 
 	@Override
 	public int atacar() {
@@ -30,9 +32,9 @@ public class Nortaichian extends Raza {
 		}
 
 		if (daño > 0) {
-			logWriter.escribirLog("\t-Nortaichian atacó haciendo " + daño + " de daño.");
+			logWriter.escribirLog("\t-Nortaichian [" + this.idUnico + "] atacó haciendo " + daño + " de daño.");
 		} else {
-			logWriter.escribirLog("\t-Nortaichian no atacó. Esta petrificado");
+			logWriter.escribirLog("\t-Nortaichian [" + this.idUnico + "] no atacó. Esta petrificado");
 		}
 
 		return daño;
@@ -42,9 +44,9 @@ public class Nortaichian extends Raza {
 	public void recibirAtaque(int daño) {
 		this.estado.recibirAtaque(this, daño);
 		if (salud > 0) {
-			logWriter.escribirLog("\t\t--Nortaichian recibe " + daño + " puntos de daño. Salud restante: " + salud);
+			logWriter.escribirLog("\t\t--Nortaichian [" + this.idUnico + "] recibe " + daño + " puntos de daño. Salud restante: " + salud);
 		} else {
-			logWriter.escribirLog("\t\t--Nortaichian recibe " + daño + " puntos de daño. Su salud era de: " + salud + ". Ha muerto! ");
+			logWriter.escribirLog("\t\t--Nortaichian [" + this.idUnico + "] recibe " + daño + " puntos de daño. Su salud era de: " + salud + ". Ha muerto! ");
 		}
 		cambiarAEstadoEnfurecido();
 	}
@@ -53,8 +55,10 @@ public class Nortaichian extends Raza {
 	public void descansar() {
 		curarse(100);
 		cambiarAEstadoDePiedra();
-		logWriter.escribirLog("\t-Nortaichian ha descansado y se volvio de piedra.");
+		logWriter.escribirLog("\t-Nortaichian [" + this.idUnico + "] ha descansado y se volvio de piedra.");
 	}
+	
+	// ---------------Metodos de Apoyo-------------------//
 	
 	public void bajarSalud(int daño) {
 		this.salud -= daño;
@@ -63,8 +67,10 @@ public class Nortaichian extends Raza {
 	public void curarse(int porcentajeCuracion) {
 		int curacion = (int) (saludMaxima * porcentajeCuracion / 100);
 		salud = (curacion + salud) > saludMaxima ? saludMaxima : curacion + salud;
-		logWriter.escribirLog("\t\t--Nortaichian se cura " + curacion + " puntos. Salud actual: " + salud);
+		logWriter.escribirLog("\t\t--Nortaichian [" + this.idUnico + "] se cura " + curacion + " puntos. Salud actual: " + salud);
 	}
+	
+	// ---------------Metodos para cambiar de Estado-------------------//
 
 	public void cambiarAEstadoNormal() {
 		this.estado = new EstadoNormalNortaichian();
@@ -80,7 +86,9 @@ public class Nortaichian extends Raza {
 		this.estado = new EstadoDePiedraNortaichian();
 		this.cantidadTurnoEnEstado = 0;
 	}
-
+	
+	// ---------------Getters-------------------//
+/*
 	public int getDañoBase() {
 		return this.dañoBase;
 	}
@@ -88,5 +96,5 @@ public class Nortaichian extends Raza {
 	public int getSalud() {
 		return this.salud;
 	}
-
+*/
 }

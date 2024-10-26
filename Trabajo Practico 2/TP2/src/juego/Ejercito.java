@@ -13,14 +13,7 @@ public class Ejercito {
 		this.tamaño = cantidadHabitantes;
 	}
 
-	public Raza getPrimero() {
-		return this.ejercito.getFirst();
-	}
-
-	public void agregar(Raza raza) {
-		this.ejercito.addLast(raza);
-		this.tamaño++;
-	}
+	// ---------------Composite-------------------//
 
 	public void atacar(Ejercito ejercitoEnemigo) {
 		Raza aliado = this.ejercito.getFirst();
@@ -30,14 +23,35 @@ public class Ejercito {
 	}
 
 	public void recibirAtaque(int daño) {
-		Raza guerrero = this.getPrimero();
+		Raza guerrero = this.ejercito.getFirst();
 		guerrero.recibirAtaque(daño);
 
 		if (guerrero.getSalud() < 0) {
 			this.ejercito.remove(guerrero);
 			this.tamaño--;
 		}
-}
+	}
+
+	public void descansar() {
+		for (Raza raza : ejercito) {
+			raza.descansar();
+		}
+	}
+
+	// ---------------Metodos-------------------//
+
+	public void agregar(Raza raza) {
+		this.ejercito.addLast(raza);
+		this.tamaño++;
+	}
+
+	public void agregarAliados(Ejercito ejercito2, int cantidadHabitantes) {
+		List<Raza> aliados = ejercito2.getEjercito();
+		for (int i = 0; i < cantidadHabitantes / 2; i++) {
+			this.ejercito.addFirst(aliados.get(i));
+			this.tamaño++;
+		}
+	}
 
 	public void reordenarse() {
 		Raza guerrero = this.getPrimero();
@@ -48,25 +62,23 @@ public class Ejercito {
 		}
 	}
 
-	public void descansar() {
-		for (Raza raza : ejercito) {
-			raza.descansar();
-		}
-	}
+	// ---------------Metodos de Apoyo-------------------//
 
 	public boolean haySoldados() {
 		return !this.ejercito.isEmpty();
 	}
 
-	public void agregarAliados(Ejercito ejercito2, int cantidadHabitantes) {
-		for (int i = 0; i < cantidadHabitantes / 2; i++) {
-			this.ejercito.addFirst(ejercito2.getPrimero());
-			this.tamaño++;
-		}
+	public Raza getPrimero() {
+		return this.ejercito.getFirst();
 	}
+
+	// ---------------Getters-------------------//
 
 	public int getTamaño() {
 		return tamaño;
 	}
 
+	public List<Raza> getEjercito() {
+		return ejercito;
+	}
 }
