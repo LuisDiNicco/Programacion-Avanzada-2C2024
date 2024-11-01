@@ -38,12 +38,13 @@ public class Reralopes extends Raza {
 
 	@Override
 	public void recibirAtaque(int daño) {
+		int saludVieja = salud;
 		salud -= daño;
 		if (salud > 0) {
 			logWriter.escribirLog("\t\t--Reralopes [" + this.idUnico + "]  recibe " + daño + " puntos de daño. Salud restante: " + salud);
 		} else {
 			logWriter.escribirLog(
-					"\t\t--Reralopes [" + this.idUnico + "] recibe " + daño + " puntos de daño. Su salud era de: " + salud + ". Ha muerto! ");
+					"\t\t--Reralopes [" + this.idUnico + "] recibe " + daño + " puntos de daño. Su salud era de: " + saludVieja + ". Quedo con: " + salud + " Ha muerto! ");
 		}
 	}
 

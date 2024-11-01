@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+import juego.Mapa;
 import juego.Simulacion;
 import pueblo.*;
 import raza.*;
@@ -47,23 +48,18 @@ public class Archivo {
 		simulacion.setPuebloFin(puebloFin);
 		simulacion.setPuebloInicio(puebloInicio);
 
-		int[][] grafo = new int[numeroDePueblos][numeroDePueblos];
-
-		for (int i = 0; i < grafo.length; i++) {
-			for (int j = 0; j < grafo[i].length; j++) {
-				grafo[i][j] = Integer.MAX_VALUE;
-			}
-		}
-
+		// Configurar el grafo en la instancia única de Mapa
+		Mapa.inicializarMapa(numeroDePueblos);
+		Mapa mapa = Mapa.getInstancia();
+		
+		mapa.setDistancia(puebloInicio, puebloInicio, 0);
+		
 		while (sc.hasNext()) {
 			int inicio = sc.nextInt();
 			int fin = sc.nextInt();
 			int distancia = sc.nextInt();
 
-			grafo[inicio - 1][fin - 1] = distancia;
-			grafo[fin - 1][inicio - 1] = distancia;
+			mapa.setDistancia(inicio, fin, distancia);
 		}
-
-		simulacion.setGrafo(grafo);
 	}
 }

@@ -46,7 +46,7 @@ public class Nortaichian extends Raza {
 		if (salud > 0) {
 			logWriter.escribirLog("\t\t--Nortaichian [" + this.idUnico + "] recibe " + daño + " puntos de daño. Salud restante: " + salud);
 		} else {
-			logWriter.escribirLog("\t\t--Nortaichian [" + this.idUnico + "] recibe " + daño + " puntos de daño. Su salud era de: " + salud + ". Ha muerto! ");
+			logWriter.escribirLog("\t\t--Nortaichian [" + this.idUnico + "] recibe " + daño + " puntos de daño. Su salud era de: " + (salud+daño) + ". Ha muerto! ");
 		}
 		cambiarAEstadoEnfurecido();
 	}

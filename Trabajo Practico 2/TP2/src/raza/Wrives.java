@@ -45,7 +45,7 @@ public class Wrives extends Raza {
 			logWriter.escribirLog("\t\t--Wrives [" + this.idUnico + "] recibe " + dañoTotal + " puntos de daño. Salud restante: " + salud);
 		} else {
 			logWriter.escribirLog(
-					"\t\t--Wrives [" + this.idUnico + "] recibe " + dañoTotal + " puntos de daño. Su salud era de: " + salud + ". Ha muerto! ");
+					"\t\t--Wrives [" + this.idUnico + "] recibe " + dañoTotal + " puntos de daño. Su salud era de: " + (salud+daño) + ". Ha muerto! ");
 		}
 	}
 

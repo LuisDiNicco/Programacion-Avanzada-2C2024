@@ -34,7 +34,7 @@ public class Radaiteran extends Raza {
 			logWriter.escribirLog("\t\t--Radaiteran [" + this.idUnico + "] recibe " + daño + " puntos de daño. Salud restante: " + salud);
 		} else {
 			logWriter.escribirLog(
-					"\t\t--Radaiteran [" + this.idUnico + "] recibe " + daño + " puntos de daño. Su salud era de: " + salud + ". Ha muerto! ");
+					"\t\t--Radaiteran [" + this.idUnico + "] recibe " + daño + " puntos de daño. Su salud era de: " + (salud+daño) + ". Ha muerto! ");
 		}
 	}
 
