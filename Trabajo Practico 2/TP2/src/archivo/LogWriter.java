@@ -53,4 +53,29 @@ public class LogWriter {
 		}
 		instanciaUnica = null; // Liberamos la instancia al cerrar
 	}
+	
+	public void escribirSeparador() {
+		escribirLog("-----------------------------------------------------------------------");
+	}
+	
+	public void escribirTextoIncioBatalla(int proximo) {
+        escribirLog("Comienza la aventura!");
+        escribirLog("Partimos desde el pueblo: " + proximo);
+	}
+
+	public void escribirTextoPartida(int proximo) {
+		escribirLog("Partiendo hacia el pueblo: " + (proximo+1) + "...");
+	}
+
+	public void escribirTextoBatallaConPuebloEnemigo(int numeroPueblo) {
+        escribirLog("Oh no! Este pueblo resultó ser hostil :( Hay que pararse de manos!");
+        escribirLog("Comienza la batalla en el pueblo: " + numeroPueblo);
+	}
+
+	public void escribirTextoLLegadaPuebloAliado() {
+        escribirLog("Qué agradables sujetos, nos dejaron descansar y se sumarán al ejército :)");
+        escribirLog("El ejército descansa y gana aliados.");
+        
+        escribirLog("Se sumará la mitad de su ejercito");
+	}
 }

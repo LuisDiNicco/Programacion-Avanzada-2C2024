@@ -6,8 +6,17 @@ public class EstadoEnfurecidoNortaichian implements EstadoNortaichian {
 
 	@Override
 	public int atacar(Nortaichian origen) {
-		origen.curarse(4);
-		int daño = origen.getDañoBase() * 2;
+		// Revisar bien la cantidad de turnos
+		int daño;
+		
+		if (origen.getCantidadTurnoEnEstadoEnfurecido() == 2) {
+			origen.cambiarAEstadoNormal();
+			daño = origen.getEstado().atacar(origen);
+		}else{
+			origen.curarse(4);
+			daño = origen.getDañoBase() * 2;
+			origen.incrementarTurnoEnfurecido();
+		}
 		return daño;
 	}
 

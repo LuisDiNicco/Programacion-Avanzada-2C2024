@@ -4,7 +4,7 @@ import java.util.Objects;
 
 import archivo.LogWriter;
 
-public abstract class Raza {
+public abstract class Raza implements Pelea{
 	// Esto esta bien??
 	protected final LogWriter logWriter = LogWriter.getInstancia();
 	protected static int id = 0;
@@ -16,19 +16,20 @@ public abstract class Raza {
 	protected int dañoBase;
 	protected int rangoMinimo;
 	protected int rangoMaximo;
+	protected String tipoArma;
 
-	public Raza(NombreRaza nombre, int salud, int saludMaxima, int dañoBase, int rangoMinimo, int rangoMaximo) {
+	public Raza(NombreRaza nombre, int salud, int saludMaxima, int dañoBase, int rangoMinimo, int rangoMaximo, String tipoArma) {
 		this.nombreRaza = nombre;
 		this.salud = salud;
 		this.saludMaxima = saludMaxima;
 		this.dañoBase = dañoBase;
 		this.rangoMinimo = rangoMinimo;
 		this.rangoMaximo = rangoMaximo;
-		this.idUnico = id++;	
+		this.idUnico = id++;
+		this.tipoArma=tipoArma;
 	}
 	
 	// ---------------Metodos-------------------//
-
 	public abstract int atacar();
 
 	public abstract void recibirAtaque(int daño);

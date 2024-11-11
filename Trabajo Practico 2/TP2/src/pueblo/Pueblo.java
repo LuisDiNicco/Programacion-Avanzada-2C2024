@@ -15,7 +15,7 @@ public class Pueblo {
 		this.cantidadHabitantes = cantidadHabitantes;
 		this.nombreRaza = nombreRaza;
 		this.tipoDePueblo = tipoDePueblo;
-		this.ejercito = new Ejercito(cantidadHabitantes);
+		this.ejercito = new Ejercito();
 	}
 
 	// ---------------Metodos-------------------//
