@@ -8,14 +8,17 @@ public class Nortaichian extends Raza {
 	private static final int rangoMinNortaichian = 16;
 	private static final int rangoMaxNortaichian = 22;
 	private static final int dañoBaseNortaichian = 18;
+	private static final String tipoArma = "Arco";
 
 	private EstadoNortaichian estado;
-	private int cantidadTurnoEnEstado;
+	private int cantidadTurnoEnEstadoEnfurecido;
+	private int cantidadTurnoEnEstadoDePiedra;
 
 	public Nortaichian() {
 		super(nombreRazaNortaichian, saludMaximaNortaichian, saludMaximaNortaichian, rangoMinNortaichian,
-				rangoMaxNortaichian, dañoBaseNortaichian);
-		this.cantidadTurnoEnEstado = 0;
+				rangoMaxNortaichian, dañoBaseNortaichian,tipoArma);
+		this.cantidadTurnoEnEstadoEnfurecido = 0;
+		this.cantidadTurnoEnEstadoDePiedra = 0;
 		this.estado = new EstadoNormalNortaichian();
 	}
 	
@@ -24,12 +27,6 @@ public class Nortaichian extends Raza {
 	@Override
 	public int atacar() {
 		int daño = this.estado.atacar(this);
-		this.cantidadTurnoEnEstado++;
-
-		// Revisar bien la cantidad de turnos
-		if (cantidadTurnoEnEstado == 2) {
-			cambiarAEstadoNormal();
-		}
 
 		if (daño > 0) {
 			logWriter.escribirLog("\t-Nortaichian [" + this.idUnico + "] atacó haciendo " + daño + " de daño.");
@@ -46,14 +43,13 @@ public class Nortaichian extends Raza {
 		if (salud > 0) {
 			logWriter.escribirLog("\t\t--Nortaichian [" + this.idUnico + "] recibe " + daño + " puntos de daño. Salud restante: " + salud);
 		} else {
-			logWriter.escribirLog("\t\t--Nortaichian [" + this.idUnico + "] recibe " + daño + " puntos de daño. Su salud era de: " + salud + ". Ha muerto! ");
+			logWriter.escribirLog("\t\t--Nortaichian [" + this.idUnico + "] recibe " + daño + " puntos de daño. Su salud era de: " + (salud+daño) + ". Ha muerto! ");
 		}
-		cambiarAEstadoEnfurecido();
 	}
 
 	@Override
 	public void descansar() {
-		curarse(100);
+		this.estado.descansar(this);
 		cambiarAEstadoDePiedra();
 		logWriter.escribirLog("\t-Nortaichian [" + this.idUnico + "] ha descansado y se volvio de piedra.");
 	}
@@ -74,17 +70,18 @@ public class Nortaichian extends Raza {
 
 	public void cambiarAEstadoNormal() {
 		this.estado = new EstadoNormalNortaichian();
-		this.cantidadTurnoEnEstado = 0;
+		this.cantidadTurnoEnEstadoEnfurecido = 0;
+		this.cantidadTurnoEnEstadoDePiedra = 0;
 	}
 
 	public void cambiarAEstadoEnfurecido() {
 		this.estado = new EstadoEnfurecidoNortaichian();
-		this.cantidadTurnoEnEstado = 0;
+		this.cantidadTurnoEnEstadoEnfurecido = 0;
 	}
 
 	public void cambiarAEstadoDePiedra() {
 		this.estado = new EstadoDePiedraNortaichian();
-		this.cantidadTurnoEnEstado = 0;
+		this.cantidadTurnoEnEstadoDePiedra = 0;
 	}
 	
 	// ---------------Getters-------------------//
@@ -97,4 +94,23 @@ public class Nortaichian extends Raza {
 		return this.salud;
 	}
 */
+	public EstadoNortaichian getEstado() {
+		return this.estado;
+	}
+
+	public void incrementarTurnoEnfurecido (){
+		this.cantidadTurnoEnEstadoEnfurecido++;
+	}
+
+	public void incrementarTurnoDePiedra (){
+		this.cantidadTurnoEnEstadoDePiedra++;
+	}
+	
+	public int getCantidadTurnoEnEstadoEnfurecido (){
+		return this.cantidadTurnoEnEstadoEnfurecido;
+	}
+
+	public int getCantidadTurnoEnEstadoDePiedra(){
+		return this.cantidadTurnoEnEstadoDePiedra;
+	}
 }

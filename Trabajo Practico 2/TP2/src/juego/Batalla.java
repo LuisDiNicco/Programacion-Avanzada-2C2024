@@ -19,11 +19,13 @@ public class Batalla {
 				logWriter.escribirLog("\t\t\t\t\t\t\t\tTurno: " + turno++);
 				logWriter.escribirLog("\t\t\t\t\t-----------------------------------");
 				logWriter.escribirLog("Ataque de nuestro ejercito:");
-				ejercitoAliado.atacar(ejercitoEnemigo);
+				int dañoEnemigo = ejercitoAliado.atacar();
+				ejercitoEnemigo.recibirAtaque(dañoEnemigo);
 
 				if (ejercitoEnemigo.haySoldados()) {
 					logWriter.escribirLog("Ataque del ejercito enemigo:");
-					ejercitoEnemigo.atacar(ejercitoAliado);
+					int dañoAliado = ejercitoEnemigo.atacar();
+					ejercitoAliado.recibirAtaque(dañoAliado);
 				}
 			}
 			

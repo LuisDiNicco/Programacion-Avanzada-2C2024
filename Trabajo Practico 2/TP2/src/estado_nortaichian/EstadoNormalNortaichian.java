@@ -14,6 +14,7 @@ public class EstadoNormalNortaichian implements EstadoNortaichian {
 	@Override
 	public void recibirAtaque(Nortaichian origen, int daño) {
 		origen.bajarSalud(daño);
+		origen.cambiarAEstadoEnfurecido();
 	}
 
 	@Override

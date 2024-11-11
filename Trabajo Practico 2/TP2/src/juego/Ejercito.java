@@ -4,24 +4,32 @@ import java.util.ArrayList;
 import java.util.List;
 import raza.*;
 
-public class Ejercito {
+public class Ejercito implements Pelea{
 	private List<Raza> ejercito;
 	private int tamaño;
 
-	public Ejercito(int cantidadHabitantes) {
+	public Ejercito() {
 		this.ejercito = new ArrayList<Raza>();
-		this.tamaño = cantidadHabitantes;
 	}
 
 	// ---------------Composite-------------------//
-
+/*
 	public void atacar(Ejercito ejercitoEnemigo) {
 		Raza aliado = this.ejercito.getFirst();
 		int daño = aliado.atacar();
 		ejercitoEnemigo.recibirAtaque(daño);
 
+	}*/
+
+	@Override
+	public int atacar() {
+		Raza aliado = this.ejercito.getFirst();
+		int daño = aliado.atacar();
+		return daño;
 	}
 
+
+	@Override
 	public void recibirAtaque(int daño) {
 		Raza guerrero = this.ejercito.getFirst();
 		guerrero.recibirAtaque(daño);
@@ -32,6 +40,7 @@ public class Ejercito {
 		}
 	}
 
+	@Override
 	public void descansar() {
 		for (Raza raza : ejercito) {
 			raza.descansar();
@@ -81,4 +90,5 @@ public class Ejercito {
 	public List<Raza> getEjercito() {
 		return ejercito;
 	}
+
 }

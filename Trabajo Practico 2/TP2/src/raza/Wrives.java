@@ -6,12 +6,13 @@ public class Wrives extends Raza {
 	private static final int rangoMinWrives = 14;
 	private static final int rangoMaxWrives = 28;
 	private static final int dañoBaseWrives = 113;
+	private static final String tipoArma = "Magia";
 
 	private int cantidadAtaques;
 	private boolean rehusaAtacar;
 
 	public Wrives() {
-		super(nombreRazaWrives, saludMaximaWrives, saludMaximaWrives, rangoMinWrives, rangoMaxWrives, dañoBaseWrives);
+		super(nombreRazaWrives, saludMaximaWrives, saludMaximaWrives, rangoMinWrives, rangoMaxWrives, dañoBaseWrives,tipoArma);
 		this.cantidadAtaques = 0;
 		this.rehusaAtacar = false;
 	}
@@ -22,13 +23,15 @@ public class Wrives extends Raza {
 	public int atacar() {
 		int daño = 0;
 		if (rehusaAtacar == false) {
-			daño = this.dañoBase * this.cantidadAtaques;
+			daño = this.dañoBase;
 
 			if (cantidadAtaques == 2) {
-				cantidadAtaques = 1;
+				cantidadAtaques = 0;
+				daño *= 2;
 			}
-
-			cantidadAtaques++;
+			else {
+				cantidadAtaques++;
+			}
 		}
 
 		logWriter.escribirLog("\t-Wrives [" + this.idUnico + "] ataca haciendo: " + daño + " de daño");
@@ -45,7 +48,7 @@ public class Wrives extends Raza {
 			logWriter.escribirLog("\t\t--Wrives [" + this.idUnico + "] recibe " + dañoTotal + " puntos de daño. Salud restante: " + salud);
 		} else {
 			logWriter.escribirLog(
-					"\t\t--Wrives [" + this.idUnico + "] recibe " + dañoTotal + " puntos de daño. Su salud era de: " + salud + ". Ha muerto! ");
+					"\t\t--Wrives [" + this.idUnico + "] recibe " + dañoTotal + " puntos de daño. Su salud era de: " + (salud+daño) + ". Ha muerto! ");
 		}
 	}
 
