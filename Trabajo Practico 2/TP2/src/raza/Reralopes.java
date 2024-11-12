@@ -20,8 +20,8 @@ public class Reralopes extends Raza {
 	private List<Boolean> listaAtaque;
 
 	public Reralopes() {
-		super(nombreRazaReralopes, saludMaximaReralopes, saludMaximaReralopes, dañoBaseReralopes,rangoMinReralopes, rangoMaxReralopes,
-				 tipoArma);
+		super(nombreRazaReralopes, saludMaximaReralopes, saludMaximaReralopes, dañoBaseReralopes, rangoMinReralopes,
+				rangoMaxReralopes, tipoArma);
 		this.concentrado = false;
 		this.cantidadAtaquesConcentrado = 0;
 		this.secuenciaAtaque = new LinkedList<Boolean>();
@@ -34,33 +34,39 @@ public class Reralopes extends Raza {
 
 	@Override
 	public int atacar() {
-		
-		if(secuenciaAtaque.isEmpty()){
+
+		if (secuenciaAtaque.isEmpty()) {
 			calcularSecuenciaAtaque();
 		}
-		
-		int dañoTotal=0;
+
+		int dañoTotal = 0;
 
 		boolean resultadoAtaque = this.secuenciaAtaque.removeFirst();
-		
-		if(resultadoAtaque){
+
+		if (resultadoAtaque) {
 			dañoTotal = this.dañoBase;
 
 			if (concentrado == true) {
 				dañoTotal = dañoBaseReralopes * 2;
 				this.cantidadAtaquesConcentrado++;
-			}else{
+			} else {
 				dañoTotal = dañoBaseReralopes;
 			}
 
-			if (this.cantidadAtaquesConcentrado == 3) {
-				this.concentrado = false;
-				this.cantidadAtaquesConcentrado = 0;
+			LogWriter.escribirLog("\t-Reralopes [" + this.idUnico + "]  ataca con " + dañoTotal + " puntos de daño!");
+		} else {
+			if (concentrado == true) {
+				this.cantidadAtaquesConcentrado++;
 			}
+
+			LogWriter.escribirLog("\t-Reralopes [" + this.idUnico + "]  fallo su ataque, no hizo daño!");
 		}
 
-		LogWriter.escribirLog("\t-Reralopes [" + this.idUnico + "]  ataca con " + dañoTotal + " puntos de daño!");
-			
+		if (this.cantidadAtaquesConcentrado == 3) {
+			this.concentrado = false;
+			this.cantidadAtaquesConcentrado = 0;
+		}
+
 		return dañoTotal;
 	}
 
@@ -69,10 +75,11 @@ public class Reralopes extends Raza {
 		int saludVieja = salud;
 		salud -= daño;
 		if (salud > 0) {
-			LogWriter.escribirLog("\t\t--Reralopes [" + this.idUnico + "]  recibe " + daño + " puntos de daño. Salud restante: " + salud);
+			LogWriter.escribirLog("\t\t--Reralopes [" + this.idUnico + "]  recibe " + daño
+					+ " puntos de daño. Salud restante: " + salud);
 		} else {
-			LogWriter.escribirLog(
-					"\t\t--Reralopes [" + this.idUnico + "] recibe " + daño + " puntos de daño. Su salud era de: " + saludVieja + ". Quedo con: " + salud + " Ha muerto! ");
+			LogWriter.escribirLog("\t\t--Reralopes [" + this.idUnico + "] recibe " + daño
+					+ " puntos de daño. Su salud era de: " + saludVieja + ". Quedo con: " + salud + " Ha muerto! ");
 		}
 		this.concentrado = false;
 	}
@@ -93,8 +100,8 @@ public class Reralopes extends Raza {
 		return cantidadAtaquesConcentrado;
 	}
 
-	private void calcularSecuenciaAtaque(){
-        Collections.shuffle(listaAtaque);
+	private void calcularSecuenciaAtaque() {
+		Collections.shuffle(listaAtaque);
 
 		this.secuenciaAtaque.addAll(listaAtaque);
 	}

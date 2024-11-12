@@ -5,6 +5,7 @@ import pueblo.TipoDePueblo;
 import archivo.*;
 import colaDePrioridad.Camino;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
@@ -52,6 +53,11 @@ public class Simulacion {
 			return;
 		}
 
+		ArrayList<Integer> rutaMinima = dijkstra.getRuta(puebloInicio - 1, puebloFin - 1);
+		System.out.println(
+				"La ruta planeada para llegar desde el pueblo " + puebloInicio + " hasta el " + puebloFin + " es:");
+		System.out.println(rutaMinima + "\n");
+
 		int[] predecesores = dijkstra.getVectorPredecesores();
 
 		Stack<Integer> pila = new Stack<>();
@@ -91,6 +97,7 @@ public class Simulacion {
 			tiempoRecorrido += (double) kmRecorrido / 10 * 24;
 
 			LogWriter.escribirSeparador();
+			LogWriter.escribirSeparador();
 			LogWriter.escribirTextoPartida(proximo);
 
 			System.out.println("Partiendo hacia el pueblo: " + (proximo + 1) + "...");
@@ -123,11 +130,11 @@ public class Simulacion {
 
 			} else if (tipoPuebloAVisitar.equals(TipoDePueblo.ALIADO)) {
 
-				System.out.println("Hemos descansado todo un dia en esta bella ciudad");
+				System.out.println("-Resultó ser un pueblo aliado, podremos descansar!");
+				System.out.println("-La mitad del ejercito del poblado se sumará a nuestro ejercito!");
+				LogWriter.escribirTextoLLegadaPuebloAliado();
 				miPueblo.agregarAliados(puebloAVisitar);
 				miPueblo.getEjercito().descansar();
-
-				LogWriter.escribirTextoLLegadaPuebloAliado();
 			}
 
 			tiempoRecorrido += 24;
@@ -164,7 +171,8 @@ public class Simulacion {
 				listaCaminos = solucionaAlternativa.encontrarCaminoNMinimo(puebloInicio - 1, puebloFin - 1, N);
 
 				if (listaCaminos.size() < N) {
-					System.out.println("No fue posible encontrar un camino alternativo que nos permita llegar al destino.");
+					System.out.println(
+							"No fue posible encontrar un camino alternativo que nos permita llegar al destino.");
 					System.out.println("En cada uno de los caminos posibles nuestro ejercito muere en batalla.");
 					break;
 				}
@@ -231,5 +239,12 @@ public class Simulacion {
 
 		return resultado;
 	}
-}
 
+	public int getPuebloInicio() {
+		return puebloInicio;
+	}
+
+	public int getPuebloFin() {
+		return puebloFin;
+	}
+}

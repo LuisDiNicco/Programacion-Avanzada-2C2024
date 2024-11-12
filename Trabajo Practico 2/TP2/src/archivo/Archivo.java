@@ -33,7 +33,6 @@ public class Archivo {
 			pueblos[i].generarEjercito(nombreRaza.crearRaza());
 		}
 
-		// Configurar el grafo en la instancia única de Mapa
 		Mapa.inicializarMapa(numeroDePueblos);
 		Mapa mapa = Mapa.getInstancia();
 
@@ -43,7 +42,7 @@ public class Archivo {
 		String[] camino = new String[partes.length];
 
 		for (int i = 0; i < partes.length; i++) {
-			camino[i] = partes[i].trim(); // Elimina los espacios en blanco
+			camino[i] = partes[i].trim();
 		}
 
 		int puebloInicio = Integer.valueOf(camino[0]);
@@ -51,7 +50,7 @@ public class Archivo {
 
 		simulacion.setPuebloFin(puebloFin);
 		simulacion.setPuebloInicio(puebloInicio);
-		
+
 		while (sc.hasNext()) {
 			int inicio = sc.nextInt();
 			int fin = sc.nextInt();

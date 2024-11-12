@@ -14,11 +14,12 @@ public class Wrives extends Raza {
 	private boolean rehusaAtacar;
 
 	public Wrives() {
-		super(nombreRazaWrives, saludMaximaWrives, saludMaximaWrives, rangoMinWrives, rangoMaxWrives, dañoBaseWrives,tipoArma);
+		super(nombreRazaWrives, saludMaximaWrives, saludMaximaWrives, rangoMinWrives, rangoMaxWrives, dañoBaseWrives,
+				tipoArma);
 		this.cantidadAtaques = 0;
 		this.rehusaAtacar = false;
 	}
-	
+
 	// ---------------Metodos-------------------//
 
 	@Override
@@ -30,13 +31,12 @@ public class Wrives extends Raza {
 			if (cantidadAtaques == 2) {
 				cantidadAtaques = 0;
 				daño *= 2;
-			}
-			else {
+			} else {
 				cantidadAtaques++;
 			}
 		}
 
-	LogWriter.escribirLog("\t-Wrives [" + this.idUnico + "] ataca haciendo: " + daño + " de daño");
+		LogWriter.escribirLog("\t-Wrives [" + this.idUnico + "] ataca haciendo: " + daño + " de daño");
 
 		return daño;
 	}
@@ -47,10 +47,11 @@ public class Wrives extends Raza {
 		salud -= dañoTotal;
 		this.rehusaAtacar = false;
 		if (salud > 0) {
-			LogWriter.escribirLog("\t\t--Wrives [" + this.idUnico + "] recibe " + dañoTotal + " puntos de daño. Salud restante: " + salud);
+			LogWriter.escribirLog("\t\t--Wrives [" + this.idUnico + "] recibe " + dañoTotal
+					+ " puntos de daño. Salud restante: " + salud);
 		} else {
-			LogWriter.escribirLog(
-					"\t\t--Wrives [" + this.idUnico + "] recibe " + dañoTotal + " puntos de daño. Su salud era de: " + (salud+daño) + ". Ha muerto! ");
+			LogWriter.escribirLog("\t\t--Wrives [" + this.idUnico + "] recibe " + dañoTotal
+					+ " puntos de daño. Su salud era de: " + (salud + daño) + ". Ha muerto! ");
 		}
 	}
 
@@ -60,9 +61,9 @@ public class Wrives extends Raza {
 		this.salud += 50;
 		this.rehusaAtacar = true;
 
-		LogWriter.escribirLog("\t-Wrives [" + this.idUnico + "] ha descansado para descrubrir el significado de la paz. Se rehusa a atacar primero.");
+		LogWriter.escribirLog("\t-Wrives [" + this.idUnico + "] ha descansado. Se rehusa a atacar primero.");
 	}
-	
+
 	// ---------------Getters-------------------//
 
 	public boolean getRehusaAtacar() {
@@ -73,4 +74,3 @@ public class Wrives extends Raza {
 		return this.cantidadAtaques;
 	}
 }
-

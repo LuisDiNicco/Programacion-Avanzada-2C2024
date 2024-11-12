@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import raza.*;
 
-public class Ejercito implements Pelea{
+public class Ejercito implements Pelea {
 	private List<Raza> ejercito;
 	private int tamaño;
 
@@ -82,5 +82,4 @@ public class Ejercito implements Pelea{
 	public List<Raza> getEjercito() {
 		return ejercito;
 	}
-
 }

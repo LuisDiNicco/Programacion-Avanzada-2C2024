@@ -1,5 +1,8 @@
 package algoritmos;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class Dijkstra {
 
 	private int[][] grafo;
@@ -14,7 +17,7 @@ public class Dijkstra {
 		this.distancia = new int[cantNodos];
 		this.predecesores = new int[cantNodos];
 	}
-	
+
 	// ---------------Metodos-------------------//
 
 	private int minimo(boolean[] visitado) {
@@ -58,7 +61,7 @@ public class Dijkstra {
 			w = minimo(visitado);
 		}
 	}
-	
+
 	// ---------------Getters-------------------//
 
 	public int[] getVectorDistancia() {
@@ -75,5 +78,25 @@ public class Dijkstra {
 
 	public int getDistancia(int otroNodo) {
 		return distancia[otroNodo - 1];
+	}
+
+	public ArrayList<Integer> getRuta(int inicio, int nodoFin) {
+		ArrayList<Integer> ruta = new ArrayList<>();
+		int nodoActual = nodoFin;
+
+		if (predecesores[nodoFin] == 0 && inicio != nodoFin) {
+			System.out.println("No existe un camino entre el nodo inicio y el nodo fin.");
+			return ruta;
+		}
+
+		while (nodoActual != inicio) {
+			ruta.add(nodoActual);
+			nodoActual = predecesores[nodoActual];
+		}
+		ruta.add(inicio);
+
+		Collections.reverse(ruta);
+
+		return ruta;
 	}
 }

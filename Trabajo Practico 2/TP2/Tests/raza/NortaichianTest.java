@@ -1,6 +1,10 @@
 package raza;
 
 import static org.junit.Assert.*;
+
+import java.io.File;
+
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,116 +13,139 @@ import estadoNortaichian.*;
 
 public class NortaichianTest {
 
-    private Nortaichian nortaichian;
+	private Nortaichian nortaichian;
+	private String rutaArchivo = "./ArchivoTest.txt";
 
-    @Before
-    public void setUp() {
-    	LogWriter.iniciar("./ArchivoTest.txt");
-        nortaichian = new Nortaichian();
-    }
+	@Before
+	public void setUp() {
+		LogWriter.iniciar(rutaArchivo);
+		nortaichian = new Nortaichian();
+	}
 
-    // Test Estado Normal
+	@Test
+	public void atacarEnEstadoNormal() {
+		nortaichian.cambiarAEstadoNormal();
+		int daño = nortaichian.atacar();
 
-    @Test
-    public void atacarEnEstadoNormal_DeberiaHacerDañoBaseYCurarse() {
-        nortaichian.cambiarAEstadoNormal();
-        int daño = nortaichian.atacar();
-        
-        assertEquals(nortaichian.getDañoBase(), daño);
-        assertTrue(nortaichian.getSalud() <= nortaichian.getSaludMaxima());  // Verifica que la salud no supera la salud máxima después de curarse
-    }
+		assertEquals(nortaichian.getDañoBase(), daño);
+		assertTrue(nortaichian.getSalud() <= nortaichian.getSaludMaxima());
+	}
 
-    @Test
-    public void recibirAtaqueEnEstadoNormal_DeberiaCambiarAEstadoEnfurecido() {
-        int saludAnterior = nortaichian.getSalud();
-        nortaichian.recibirAtaque(10);
+	@Test
+	public void recibirAtaqueEnEstadoNormal() {
+		int saludAnterior = nortaichian.getSalud();
+		nortaichian.recibirAtaque(10);
 
-        assertTrue(nortaichian.getSalud() < saludAnterior);  // Verifica que se redujo la salud
-        assertTrue(nortaichian.getEstado() instanceof EstadoEnfurecidoNortaichian);  // Verifica el cambio de estado
-    }
+		assertTrue(nortaichian.getSalud() < saludAnterior);
+		assertTrue(nortaichian.getEstado() instanceof EstadoEnfurecidoNortaichian);
+	}
 
-    @Test
-    public void descansarEnEstadoNormal_DeberiaCurarseYConvertirseEnPiedra() {
-        nortaichian.recibirAtaque(10);
-    	int saludAnterior = nortaichian.getSalud();
-        nortaichian.descansar();
+	@Test
+	public void descansarEnEstadoNormal() {
+		nortaichian.recibirAtaque(10);
+		int saludAnterior = nortaichian.getSalud();
+		nortaichian.descansar();
 
-        assertTrue(nortaichian.getSalud() > saludAnterior);  // Verifica que la salud aumentó
-        assertTrue(nortaichian.getEstado() instanceof EstadoDePiedraNortaichian);  // Verifica que se convirtió en piedra
-    }
+		assertTrue(nortaichian.getSalud() > saludAnterior);
+		assertTrue(nortaichian.getEstado() instanceof EstadoDePiedraNortaichian);
+	}
 
-    // Test Estado Enfurecido
+	@Test
+	public void atacarConPocaVida() {
+		nortaichian.recibirAtaque(10);
+		int daño = nortaichian.atacar();
 
-    @Test
-    public void atacarEnEstadoEnfurecido_DeberiaHacerElDobleDeDañoBaseYCurarse() {
-        nortaichian.cambiarAEstadoEnfurecido();
-        int daño = nortaichian.atacar();
-        
-        assertEquals(nortaichian.getDañoBase() * 2, daño);
-        assertTrue(nortaichian.getSalud() <= nortaichian.getSaludMaxima());  // Verifica que la salud no supera la máxima
-    }
+		assertEquals(nortaichian.getDañoBase() * 2, daño);
+		assertTrue(nortaichian.getSalud() <= nortaichian.getSaludMaxima());
+	}
 
-    @Test
-    public void recibirAtaqueEnEstadoEnfurecido_DeberiaReducirSalud() {
-        nortaichian.cambiarAEstadoEnfurecido();
-        int saludAnterior = nortaichian.getSalud();
-        
-        nortaichian.recibirAtaque(10);
+	@Test
+	public void atacarEnEstadoEnfurecido() {
+		nortaichian.cambiarAEstadoEnfurecido();
+		int daño = nortaichian.atacar();
 
-        assertTrue(nortaichian.getSalud() < saludAnterior);  // Verifica que la salud se redujo
-        assertTrue(nortaichian.getEstado() instanceof EstadoEnfurecidoNortaichian);  // Sigue en estado enfurecido
-    }
+		assertEquals(nortaichian.getDañoBase() * 2, daño);
+		assertTrue(nortaichian.getSalud() <= nortaichian.getSaludMaxima());
+	}
 
-    @Test
-    public void descansarEnEstadoEnfurecido_DeberiaCurarseAlMaximo() {
-        nortaichian.recibirAtaque(10);
-    	//nortaichian.cambiarAEstadoEnfurecido();
-        int saludAnterior = nortaichian.getSalud();
-        assertNotEquals(saludAnterior, nortaichian.getSaludMaxima());
-        
-        nortaichian.descansar();
+	@Test
+	public void recibirAtaqueEnEstadoEnfurecido() {
+		nortaichian.cambiarAEstadoEnfurecido();
+		int saludAnterior = nortaichian.getSalud();
 
-        assertEquals(nortaichian.getSaludMaxima(), nortaichian.getSalud());  // Verifica curación completa
-    }
+		nortaichian.recibirAtaque(10);
 
-    // Test Estado De Piedra
+		assertTrue(nortaichian.getSalud() < saludAnterior);
+		assertTrue(nortaichian.getEstado() instanceof EstadoEnfurecidoNortaichian);
+	}
 
-    @Test
-    public void atacarEnEstadoDePiedra_DeberiaHacerCeroDaño() {
-        nortaichian.cambiarAEstadoDePiedra();
-        int daño = nortaichian.atacar();
+	@Test
+	public void muereEstadoEnfurecido() {
+		nortaichian.cambiarAEstadoEnfurecido();
+		int saludAnterior = nortaichian.getSalud();
 
-        assertEquals(0, daño);  // Verifica que no causa daño
-    }
+		nortaichian.recibirAtaque(1000);
 
-    @Test
-    public void recibirAtaqueEnEstadoDePiedra_DeberiaReducirSaludMitadDelDaño() {
-        nortaichian.cambiarAEstadoDePiedra();
-        int saludAnterior = nortaichian.getSalud();
-        nortaichian.recibirAtaque(10);
+		assertTrue(nortaichian.getSalud() < saludAnterior);
+		assertTrue(nortaichian.getEstado() instanceof EstadoEnfurecidoNortaichian);
+	}
 
-        assertEquals(saludAnterior - 5, nortaichian.getSalud());  // Verifica que solo se reduce mitad del daño
-    }
+	@Test
+	public void descansarEnEstadoEnfurecido() {
+		nortaichian.recibirAtaque(10);
+		int saludAnterior = nortaichian.getSalud();
+		assertNotEquals(saludAnterior, nortaichian.getSaludMaxima());
 
-    @Test
-    public void descansarEnEstadoDePiedra_NoDeberiaHacerNada() {
-        nortaichian.cambiarAEstadoDePiedra();
-        int saludAnterior = nortaichian.getSalud();
-        nortaichian.descansar();
+		nortaichian.descansar();
 
-        assertEquals(saludAnterior, nortaichian.getSalud());  // La salud no cambia
-        assertTrue(nortaichian.getEstado() instanceof EstadoDePiedraNortaichian);  // Estado no cambia
-    }
+		assertEquals(nortaichian.getSaludMaxima(), nortaichian.getSalud());
+	}
 
-    // Verificación del cambio de estado en Estado de Piedra después de 2 turnos
-    @Test
-    public void atacarEnEstadoDePiedra_TercerTurno_DeberiaCambiarAEstadoNormal() {
-        nortaichian.cambiarAEstadoDePiedra();
-        nortaichian.atacar(); // Primer turno en piedra
-        nortaichian.atacar(); // Segundo turno en piedra
-        nortaichian.atacar(); // Vuelve al normal
+	@Test
+	public void atacarEnEstadoDePiedra() {
+		nortaichian.cambiarAEstadoDePiedra();
+		int salud = nortaichian.getSalud();
+		int daño = nortaichian.atacar();
 
-        // Verifica que en el tercer turno regresa a estado normal
-        assertTrue(nortaichian.getEstado() instanceof EstadoNormalNortaichian);
-    }
+		assertEquals(0, daño);
+		assertEquals(salud, nortaichian.getSalud());
+	}
+
+	@Test
+	public void recibirAtaqueEnEstadoDePiedra() {
+		nortaichian.cambiarAEstadoDePiedra();
+		int saludAnterior = nortaichian.getSalud();
+		nortaichian.recibirAtaque(10);
+
+		assertEquals(saludAnterior - 5, nortaichian.getSalud());
+	}
+
+	@Test
+	public void descansarEnEstadoDePiedra() {
+		nortaichian.cambiarAEstadoDePiedra();
+		int saludAnterior = nortaichian.getSalud();
+		nortaichian.descansar();
+
+		assertEquals(saludAnterior, nortaichian.getSalud());
+		assertTrue(nortaichian.getEstado() instanceof EstadoDePiedraNortaichian);
+	}
+
+	@Test
+	public void atacarEnEstadoDePiedra_TercerTurno() {
+		nortaichian.cambiarAEstadoDePiedra();
+		nortaichian.atacar();
+		nortaichian.atacar();
+		nortaichian.atacar();
+
+		assertTrue(nortaichian.getEstado() instanceof EstadoNormalNortaichian);
+	}
+	
+	@After
+	public void borrarArchivo() {
+		LogWriter.cerrar();
+		File archivo = new File(rutaArchivo);
+		if (archivo.exists()) {
+			archivo.delete();
+		}
+	}
 }

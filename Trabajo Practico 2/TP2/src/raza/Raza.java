@@ -2,12 +2,9 @@ package raza;
 
 import java.util.Objects;
 
-
-public abstract class Raza implements Pelea{
-	// Esto esta bien??
-	//protected final LogWriter logWriter = LogWriter.getInstancia();
+public abstract class Raza implements Pelea {
 	protected static int id = 0;
-	
+
 	protected int idUnico;
 	protected NombreRaza nombreRaza;
 	protected int salud;
@@ -17,7 +14,8 @@ public abstract class Raza implements Pelea{
 	protected int rangoMaximo;
 	protected String tipoArma;
 
-	public Raza(NombreRaza nombre, int salud, int saludMaxima, int rangoMinimo, int rangoMaximo, int dañoBase, String tipoArma) {
+	public Raza(NombreRaza nombre, int salud, int saludMaxima, int rangoMinimo, int rangoMaximo, int dañoBase,
+			String tipoArma) {
 		this.nombreRaza = nombre;
 		this.salud = salud;
 		this.saludMaxima = saludMaxima;
@@ -25,18 +23,18 @@ public abstract class Raza implements Pelea{
 		this.rangoMinimo = rangoMinimo;
 		this.rangoMaximo = rangoMaximo;
 		this.idUnico = id++;
-		this.tipoArma=tipoArma;
+		this.tipoArma = tipoArma;
 	}
-	
+
 	// ---------------Metodos-------------------//
 	public abstract int atacar();
 
 	public abstract void recibirAtaque(int daño);
 
 	public abstract void descansar();
-		
+
 	// ---------------Getters-------------------//
-	
+
 	public String getNombreRaza() {
 		return nombreRaza.name();
 	}
@@ -44,7 +42,7 @@ public abstract class Raza implements Pelea{
 	public int getSalud() {
 		return salud;
 	}
-	
+
 	public int getSaludMaxima() {
 		return saludMaxima;
 	}
@@ -64,7 +62,7 @@ public abstract class Raza implements Pelea{
 	public int getIdUnico() {
 		return idUnico;
 	}
-	
+
 	public String getTipoArma() {
 		return tipoArma;
 	}
@@ -73,9 +71,9 @@ public abstract class Raza implements Pelea{
 	public int hashCode() {
 		return Objects.hash(idUnico);
 	}
-	
+
 	// ---------------Metodos-------------------//
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -84,7 +82,7 @@ public abstract class Raza implements Pelea{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Raza other = (Raza) obj;
-		return idUnico == other.idUnico;
+
+		return false;
 	}
 }

@@ -14,7 +14,7 @@ public class Radaiteran extends Raza {
 
 	public Radaiteran() {
 		super(nombreRazaRadaiteran, saludMaximaRadaiteran, saludMaximaRadaiteran, rangoMinRadaiteran,
-				rangoMaxRadaiteran, dañoBaseRadaiteran,tipoArma);
+				rangoMaxRadaiteran, dañoBaseRadaiteran, tipoArma);
 		this.cantidadAtaques = 0;
 	}
 
@@ -33,10 +33,11 @@ public class Radaiteran extends Raza {
 	public void recibirAtaque(int daño) {
 		salud -= daño;
 		if (salud > 0) {
-			LogWriter.escribirLog("\t\t--Radaiteran [" + this.idUnico + "] recibe " + daño + " puntos de daño. Salud restante: " + salud);
+			LogWriter.escribirLog("\t\t--Radaiteran [" + this.idUnico + "] recibe " + daño
+					+ " puntos de daño. Salud restante: " + salud);
 		} else {
-			LogWriter.escribirLog(
-					"\t\t--Radaiteran [" + this.idUnico + "] recibe " + daño + " puntos de daño. Su salud era de: " + (salud+daño) + ". Ha muerto! ");
+			LogWriter.escribirLog("\t\t--Radaiteran [" + this.idUnico + "] recibe " + daño
+					+ " puntos de daño. Su salud era de: " + (salud + daño) + ". Ha muerto! ");
 		}
 	}
 
@@ -44,7 +45,7 @@ public class Radaiteran extends Raza {
 	public void descansar() {
 		LogWriter.escribirLog("\t-Radaiteran [" + this.idUnico + "]  descansa. No sucede nada.");
 	}
-	
+
 	public int getCantidadDeAtaques() {
 		return cantidadAtaques;
 	}

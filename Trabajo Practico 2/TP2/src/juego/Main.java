@@ -18,7 +18,6 @@ public class Main {
 		//String pathArchivoSimulacion = "./Archivos de Prueba/Caso 9 - 50 pueblos.txt";
 		//String pathArchivoSimulacion = "./Archivos de Prueba/Caso 10 - 2 caminos.txt";
 		
-		
 		String pathArchivoLogSimulacion = "./Archivo Log Simulacion/ResultadoSimulacion.txt";
 
 		simualcion.iniciarSimulacion(pathArchivoSimulacion, pathArchivoLogSimulacion);

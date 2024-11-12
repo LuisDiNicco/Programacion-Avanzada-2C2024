@@ -1,6 +1,10 @@
 package estadoNortaichian;
 
 import static org.junit.Assert.*;
+
+import java.io.File;
+
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,10 +15,11 @@ public class EstadoDePiedraNortaichianTest {
 
 	private Nortaichian nortaichian;
 	private EstadoDePiedraNortaichian estadoDePiedra;
+	private String rutaArchivo = "./ArchivoTest.txt";
 
 	@Before
 	public void setUp() {
-		LogWriter.iniciar("./ArchivoTest.txt");
+		LogWriter.iniciar(rutaArchivo);
 		nortaichian = new Nortaichian();
 		estadoDePiedra = new EstadoDePiedraNortaichian();
 		nortaichian.cambiarAEstadoDePiedra();
@@ -36,7 +41,7 @@ public class EstadoDePiedraNortaichianTest {
 		assertEquals(0, daño);
 		assertEquals(2, nortaichian.getCantidadTurnoEnEstadoDePiedra());
 	}
-	
+
 	@Test
 	public void testAtacarTercerTurnoEnEstadoDePiedra() {
 		nortaichian.incrementarTurnoDePiedra();
@@ -62,6 +67,15 @@ public class EstadoDePiedraNortaichianTest {
 
 		assertEquals(0, nortaichian.getCantidadTurnoEnEstadoDePiedra());
 		assertTrue(nortaichian.getEstado() instanceof EstadoDePiedraNortaichian);
+	}
+	
+	@After
+	public void borrarArchivo() {
+		LogWriter.cerrar();
+		File archivo = new File(rutaArchivo);
+		if (archivo.exists()) {
+			archivo.delete();
+		}
 	}
 }
 

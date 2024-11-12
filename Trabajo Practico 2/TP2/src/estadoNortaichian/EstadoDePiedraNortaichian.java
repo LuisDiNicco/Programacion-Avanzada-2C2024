@@ -7,11 +7,10 @@ public class EstadoDePiedraNortaichian implements EstadoNortaichian {
 	@Override
 	public int atacar(Nortaichian origen) {
 		int daño;
-		if(origen.getCantidadTurnoEnEstadoDePiedra() == 2){
+		if (origen.getCantidadTurnoEnEstadoDePiedra() == 2) {
 			origen.cambiarAEstadoNormal();
 			daño = origen.getEstado().atacar(origen);
-		}
-		else {
+		} else {
 			daño = 0;
 			origen.incrementarTurnoDePiedra();
 		}
@@ -19,8 +18,8 @@ public class EstadoDePiedraNortaichian implements EstadoNortaichian {
 	}
 
 	@Override
-	public void recibirAtaque(Nortaichian origen, int daño) {	
-		int dañoReducido = daño/2;
+	public void recibirAtaque(Nortaichian origen, int daño) {
+		int dañoReducido = daño / 2;
 		origen.bajarSalud(dañoReducido);
 		origen.incrementarTurnoDePiedra();
 	}
@@ -29,6 +28,5 @@ public class EstadoDePiedraNortaichian implements EstadoNortaichian {
 	public void descansar(Nortaichian origen) {
 		return;
 	}
-
 }
 
