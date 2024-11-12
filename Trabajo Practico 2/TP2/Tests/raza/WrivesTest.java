@@ -1,56 +1,72 @@
 package raza;
 
 import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.Test;
 
+import archivo.LogWriter;
+
 public class WrivesTest {
 
-  private Wrives wrives;
+	    private Wrives wrives;
 
-    @Before
-    public void inicio() {
-        wrives = new Wrives();
-    }
+	    @Before
+	    public void setUp() {
+	        LogWriter.iniciar("./ArchivoTest.txt");
+	        wrives = new Wrives();
+	    }
 
-    @Test
-    public void testConstructor() {
-        assertNotNull(wrives);
-        assertEquals(1, wrives.getCantidadAtaques());
-        assertFalse(wrives.getRehusaAtacar());       
-    }
-	
-	@Test
-	public void testPrimerAtaque() {
-	    int daño = wrives.atacar();
-	    assertEquals(113, daño);
-	}
+	    @Test
+	    public void testConstructor() {
+	        assertEquals(108, wrives.getSalud());
+	        assertEquals( 0, wrives.getCantidadAtaques());
+	        assertFalse( wrives.getRehusaAtacar());
+	    }
 
-	@Test
-	public void testSegundoAtaque() {
-	    wrives.atacar(); 
-	    int daño = wrives.atacar(); 
-	    assertEquals(226, daño);
-	}
-	
-	@Test
-	public void testRecibirAtaque() {
-	    wrives.recibirAtaque(50);
-	    assertEquals(8, wrives.getSalud()); 
-	}
+	    @Test
+	    public void testAtacarSinRehusar() {
+	        int daño = wrives.atacar();
+	        assertEquals( 113, daño);
+	        assertEquals( 1, wrives.getCantidadAtaques());
+	    }
 
-	@Test
-	public void testRecibirUltimoAtaque() {
-	    wrives.recibirAtaque(54); 
-	    assertEquals(0, wrives.getSalud()); 
-	}
-	
-	@Test
-	public void testDescansar() {
-	    wrives.descansar();
-	    assertEquals(158, wrives.getSaludMaxima()); 
-	    assertTrue(wrives.getRehusaAtacar());
-	}
+	    @Test
+	    public void testAtacarMultiplicador() {
+	        wrives.atacar(); 
+	        wrives.atacar();  
+	        int daño = wrives.atacar();  
+	        assertEquals(113 * 2, daño);
+	        assertEquals( 0, wrives.getCantidadAtaques());
+	    }
 
-}
+	    @Test
+	    public void testRehusarAtacar() {
+	        wrives.descansar();  
+	        int daño = wrives.atacar();
+	        assertEquals( 0, daño);
+	        assertTrue(wrives.getRehusaAtacar());
+	    }
+
+	    @Test
+	    public void testRecibirAtaque() {
+	        int daño = 10;
+	        wrives.recibirAtaque(daño);
+	        assertEquals( 108 - 2 * daño, wrives.getSalud());
+	        assertFalse( wrives.getRehusaAtacar());
+	    }
+
+	    @Test
+	    public void testRecibirAtaqueYMuere() {
+	        int daño = 60;
+	        wrives.recibirAtaque(daño);
+	        assertTrue(wrives.getSalud() <= 0);
+	    }
+
+	    @Test
+	    public void testDescansar() {
+	        wrives.descansar();
+	        assertEquals( 108 + 50, wrives.getSaludMaxima());
+	        assertEquals( 108 + 50, wrives.getSalud());
+	        assertTrue( wrives.getRehusaAtacar());
+	    }
+	}
