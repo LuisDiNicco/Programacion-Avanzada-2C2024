@@ -1,5 +1,7 @@
 package raza;
 
+import archivo.LogWriter;
+
 public class Radaiteran extends Raza {
 	private static final NombreRaza nombreRazaRadaiteran = NombreRaza.RADAITERAN;
 	private static final int saludMaximaRadaiteran = 36;
@@ -22,7 +24,7 @@ public class Radaiteran extends Raza {
 	public int atacar() {
 		int dañoExtra = 3 * cantidadAtaques;
 		int dañoTotal = dañoBaseRadaiteran + dañoExtra;
-		logWriter.escribirLog("\t-Radaiteran [" + this.idUnico + "] ataca con " + dañoTotal + " puntos de daño!");
+		LogWriter.escribirLog("\t-Radaiteran [" + this.idUnico + "] ataca con " + dañoTotal + " puntos de daño!");
 		cantidadAtaques++;
 		return dañoTotal;
 	}
@@ -31,15 +33,19 @@ public class Radaiteran extends Raza {
 	public void recibirAtaque(int daño) {
 		salud -= daño;
 		if (salud > 0) {
-			logWriter.escribirLog("\t\t--Radaiteran [" + this.idUnico + "] recibe " + daño + " puntos de daño. Salud restante: " + salud);
+			LogWriter.escribirLog("\t\t--Radaiteran [" + this.idUnico + "] recibe " + daño + " puntos de daño. Salud restante: " + salud);
 		} else {
-			logWriter.escribirLog(
+			LogWriter.escribirLog(
 					"\t\t--Radaiteran [" + this.idUnico + "] recibe " + daño + " puntos de daño. Su salud era de: " + (salud+daño) + ". Ha muerto! ");
 		}
 	}
 
 	@Override
 	public void descansar() {
-		logWriter.escribirLog("\t-Radaiteran [" + this.idUnico + "]  descansa. No sucede nada.");
+		LogWriter.escribirLog("\t-Radaiteran [" + this.idUnico + "]  descansa. No sucede nada.");
+	}
+	
+	public int getCantidadDeAtaques() {
+		return cantidadAtaques;
 	}
 }

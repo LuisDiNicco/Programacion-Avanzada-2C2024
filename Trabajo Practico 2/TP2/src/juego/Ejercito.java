@@ -13,13 +13,6 @@ public class Ejercito implements Pelea{
 	}
 
 	// ---------------Composite-------------------//
-/*
-	public void atacar(Ejercito ejercitoEnemigo) {
-		Raza aliado = this.ejercito.getFirst();
-		int daño = aliado.atacar();
-		ejercitoEnemigo.recibirAtaque(daño);
-
-	}*/
 
 	@Override
 	public int atacar() {
@@ -28,13 +21,12 @@ public class Ejercito implements Pelea{
 		return daño;
 	}
 
-
 	@Override
 	public void recibirAtaque(int daño) {
 		Raza guerrero = this.ejercito.getFirst();
 		guerrero.recibirAtaque(daño);
 
-		if (guerrero.getSalud() < 0) {
+		if (guerrero.getSalud() <= 0) {
 			this.ejercito.remove(guerrero);
 			this.tamaño--;
 		}

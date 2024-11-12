@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 public class LogWriter {
 
 	private static LogWriter instanciaUnica; // Variable estática que contendrá la única instancia
-	private PrintWriter pw;
+	static private PrintWriter pw;
 
 	private LogWriter(String rutaArchivo) {
 		try {
@@ -31,48 +31,49 @@ public class LogWriter {
 		}
 	}
 
+	/*
 	// Método estático que proporciona acceso a la única instancia
 	public static LogWriter getInstancia() {
 		if (instanciaUnica == null) {
 			throw new IllegalStateException("LogWriter no ha sido inicializado. Llama a iniciar() primero.");
 		}
 		return instanciaUnica;
-	}
+	}*/
 
 	// Método para escribir en el log
-	public void escribirLog(String mensaje) {
+	public static void escribirLog(String mensaje) {
 		if (pw != null) {
 			pw.println(mensaje);
 		}
 	}
 
 	// Método para cerrar el PrintWriter
-	public void cerrar() {
+	public static void cerrar() {
 		if (pw != null) {
 			pw.close();
 		}
 		instanciaUnica = null; // Liberamos la instancia al cerrar
 	}
 	
-	public void escribirSeparador() {
+	public static void escribirSeparador() {
 		escribirLog("-----------------------------------------------------------------------");
 	}
 	
-	public void escribirTextoIncioBatalla(int proximo) {
+	public static void escribirTextoIncioBatalla(int proximo) {
         escribirLog("Comienza la aventura!");
         escribirLog("Partimos desde el pueblo: " + proximo);
 	}
 
-	public void escribirTextoPartida(int proximo) {
+	public static void escribirTextoPartida(int proximo) {
 		escribirLog("Partiendo hacia el pueblo: " + (proximo+1) + "...");
 	}
 
-	public void escribirTextoBatallaConPuebloEnemigo(int numeroPueblo) {
+	public static void escribirTextoBatallaConPuebloEnemigo(int numeroPueblo) {
         escribirLog("Oh no! Este pueblo resultó ser hostil :( Hay que pararse de manos!");
         escribirLog("Comienza la batalla en el pueblo: " + numeroPueblo);
 	}
 
-	public void escribirTextoLLegadaPuebloAliado() {
+	public static void escribirTextoLLegadaPuebloAliado() {
         escribirLog("Qué agradables sujetos, nos dejaron descansar y se sumarán al ejército :)");
         escribirLog("El ejército descansa y gana aliados.");
         

@@ -1,9 +1,10 @@
-
 package raza;
 
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+
+import archivo.LogWriter;
 
 public class Reralopes extends Raza {
 	private static final NombreRaza nombreRazaReralopes = NombreRaza.RERALOPES;
@@ -19,8 +20,8 @@ public class Reralopes extends Raza {
 	private List<Boolean> listaAtaque;
 
 	public Reralopes() {
-		super(nombreRazaReralopes, saludMaximaReralopes, saludMaximaReralopes, rangoMinReralopes, rangoMaxReralopes,
-				dañoBaseReralopes, tipoArma);
+		super(nombreRazaReralopes, saludMaximaReralopes, saludMaximaReralopes, dañoBaseReralopes,rangoMinReralopes, rangoMaxReralopes,
+				 tipoArma);
 		this.concentrado = false;
 		this.cantidadAtaquesConcentrado = 0;
 		this.secuenciaAtaque = new LinkedList<Boolean>();
@@ -34,7 +35,7 @@ public class Reralopes extends Raza {
 	@Override
 	public int atacar() {
 		
-		if(secuenciaAtaque.size() == 0){
+		if(secuenciaAtaque.isEmpty()){
 			calcularSecuenciaAtaque();
 		}
 		
@@ -58,7 +59,7 @@ public class Reralopes extends Raza {
 			}
 		}
 
-		logWriter.escribirLog("\t-Reralopes [" + this.idUnico + "]  ataca con " + dañoTotal + " puntos de daño!");
+		LogWriter.escribirLog("\t-Reralopes [" + this.idUnico + "]  ataca con " + dañoTotal + " puntos de daño!");
 			
 		return dañoTotal;
 	}
@@ -68,9 +69,9 @@ public class Reralopes extends Raza {
 		int saludVieja = salud;
 		salud -= daño;
 		if (salud > 0) {
-			logWriter.escribirLog("\t\t--Reralopes [" + this.idUnico + "]  recibe " + daño + " puntos de daño. Salud restante: " + salud);
+			LogWriter.escribirLog("\t\t--Reralopes [" + this.idUnico + "]  recibe " + daño + " puntos de daño. Salud restante: " + salud);
 		} else {
-			logWriter.escribirLog(
+			LogWriter.escribirLog(
 					"\t\t--Reralopes [" + this.idUnico + "] recibe " + daño + " puntos de daño. Su salud era de: " + saludVieja + ". Quedo con: " + salud + " Ha muerto! ");
 		}
 		this.concentrado = false;
@@ -79,7 +80,7 @@ public class Reralopes extends Raza {
 	@Override
 	public void descansar() {
 		this.concentrado = true;
-		logWriter.escribirLog("\t-Reralopes [" + this.idUnico + "]  se ha concentrado.");
+		LogWriter.escribirLog("\t-Reralopes [" + this.idUnico + "]  se ha concentrado.");
 	}
 
 	// ---------------Getters-------------------//
@@ -95,6 +96,6 @@ public class Reralopes extends Raza {
 	private void calcularSecuenciaAtaque(){
         Collections.shuffle(listaAtaque);
 
-		this.secuenciaAtaque = listaAtaque;
+		this.secuenciaAtaque.addAll(listaAtaque);
 	}
 }

@@ -1,4 +1,4 @@
-package estado_nortaichian;
+package estadoNortaichian;
 
 import raza.*;
 

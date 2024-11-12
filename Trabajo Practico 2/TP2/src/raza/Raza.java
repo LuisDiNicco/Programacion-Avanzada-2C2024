@@ -2,11 +2,10 @@ package raza;
 
 import java.util.Objects;
 
-import archivo.LogWriter;
 
 public abstract class Raza implements Pelea{
 	// Esto esta bien??
-	protected final LogWriter logWriter = LogWriter.getInstancia();
+	//protected final LogWriter logWriter = LogWriter.getInstancia();
 	protected static int id = 0;
 	
 	protected int idUnico;
@@ -18,7 +17,7 @@ public abstract class Raza implements Pelea{
 	protected int rangoMaximo;
 	protected String tipoArma;
 
-	public Raza(NombreRaza nombre, int salud, int saludMaxima, int dañoBase, int rangoMinimo, int rangoMaximo, String tipoArma) {
+	public Raza(NombreRaza nombre, int salud, int saludMaxima, int rangoMinimo, int rangoMaximo, int dañoBase, String tipoArma) {
 		this.nombreRaza = nombre;
 		this.salud = salud;
 		this.saludMaxima = saludMaxima;
@@ -64,6 +63,10 @@ public abstract class Raza implements Pelea{
 
 	public int getIdUnico() {
 		return idUnico;
+	}
+	
+	public String getTipoArma() {
+		return tipoArma;
 	}
 
 	@Override

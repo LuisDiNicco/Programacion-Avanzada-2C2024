@@ -23,5 +23,4 @@ public class Main {
 
 		simualcion.iniciarSimulacion(pathArchivoSimulacion, pathArchivoLogSimulacion);
 	}
-
 }

@@ -3,7 +3,9 @@ package algoritmos;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.PriorityQueue;
+
+import colaDePrioridad.*;
+
 
 public class SolucionAlternativa {
     private int[][] grafo;
@@ -14,13 +16,13 @@ public class SolucionAlternativa {
 
     public List<Camino> encontrarCaminoNMinimo(int nodoInicio, int nodoFin, int N) {
         List<Camino> caminosMinimos = new ArrayList<>();
-        PriorityQueue<Camino> pq = new PriorityQueue<>();
+        ColaDePrioridad colaDePrioridad = new ColaDePrioridad();
         
         // Iniciar el primer camino con el nodo de inicio
-        pq.add(new Camino(Arrays.asList(nodoInicio), 0));
+        colaDePrioridad.insertar(new Camino(Arrays.asList(nodoInicio), 0));
         
-        while (!pq.isEmpty() && caminosMinimos.size() < N) {
-        	Camino caminoActual = pq.poll();
+        while (!colaDePrioridad.estaVacio() && caminosMinimos.size() < N) {
+        	Camino caminoActual = colaDePrioridad.extraerMin();
             int posicionUltimoNodo=caminoActual.getNodos().size() - 1;
             int nodoActual = caminoActual.getNodos().get(posicionUltimoNodo);
             
@@ -48,7 +50,7 @@ public class SolucionAlternativa {
                     int costoNuevoCamino = caminoActual.getCosto() + costo;
                     
                     // Añadir el camino extendido a la cola de prioridad
-                    pq.add(new Camino(nuevoCamino, costoNuevoCamino));
+                    colaDePrioridad.insertar(new Camino(nuevoCamino, costoNuevoCamino));
                 }
             }
         }

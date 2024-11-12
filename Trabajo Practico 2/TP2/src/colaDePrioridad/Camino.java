@@ -1,4 +1,4 @@
-package algoritmos;
+package colaDePrioridad;
 
 import java.util.ArrayList;
 import java.util.List;

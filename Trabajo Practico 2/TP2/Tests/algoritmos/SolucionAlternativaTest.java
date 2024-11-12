@@ -2,6 +2,9 @@ package algoritmos;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import colaDePrioridad.Camino;
+
 import static org.junit.Assert.*;
 
 import java.util.Arrays;

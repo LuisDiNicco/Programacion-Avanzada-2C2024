@@ -1,5 +1,7 @@
 package raza;
 
+import archivo.LogWriter;
+
 public class Wrives extends Raza {
 	private static final NombreRaza nombreRazaWrives = NombreRaza.WRIVES;
 	private static final int saludMaximaWrives = 108;
@@ -34,7 +36,7 @@ public class Wrives extends Raza {
 			}
 		}
 
-		logWriter.escribirLog("\t-Wrives [" + this.idUnico + "] ataca haciendo: " + daño + " de daño");
+	LogWriter.escribirLog("\t-Wrives [" + this.idUnico + "] ataca haciendo: " + daño + " de daño");
 
 		return daño;
 	}
@@ -45,9 +47,9 @@ public class Wrives extends Raza {
 		salud -= dañoTotal;
 		this.rehusaAtacar = false;
 		if (salud > 0) {
-			logWriter.escribirLog("\t\t--Wrives [" + this.idUnico + "] recibe " + dañoTotal + " puntos de daño. Salud restante: " + salud);
+			LogWriter.escribirLog("\t\t--Wrives [" + this.idUnico + "] recibe " + dañoTotal + " puntos de daño. Salud restante: " + salud);
 		} else {
-			logWriter.escribirLog(
+			LogWriter.escribirLog(
 					"\t\t--Wrives [" + this.idUnico + "] recibe " + dañoTotal + " puntos de daño. Su salud era de: " + (salud+daño) + ". Ha muerto! ");
 		}
 	}
@@ -58,7 +60,7 @@ public class Wrives extends Raza {
 		this.salud += 50;
 		this.rehusaAtacar = true;
 
-		logWriter.escribirLog("\t-Wrives [" + this.idUnico + "] ha descansado para descrubrir el significado de la paz. Se rehusa a atacar primero.");
+		LogWriter.escribirLog("\t-Wrives [" + this.idUnico + "] ha descansado para descrubrir el significado de la paz. Se rehusa a atacar primero.");
 	}
 	
 	// ---------------Getters-------------------//

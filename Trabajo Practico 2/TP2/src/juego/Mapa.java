@@ -63,17 +63,6 @@ public class Mapa {
 		instancia = null;
 	}
 	
-	// Método para retornar los nodos adyacentes a un nodo dado
-    public Set<Integer> getPueblosAdyacentes(int nodo) {
-        Set<Integer> adyacentes = new HashSet<>();
-        for (int i = 0; i < grafo[nodo].length; i++) {
-            if (grafo[nodo][i] != Integer.MAX_VALUE) {
-                adyacentes.add(i);
-            }
-        }
-        return adyacentes;
-    }
-
 	public int getDistancia(int nodoOrigen, int nodoFin){
 		return grafo[nodoOrigen][nodoFin];
 	}
