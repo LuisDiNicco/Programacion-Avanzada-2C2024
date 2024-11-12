@@ -2,11 +2,12 @@ package raza;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import archivo.LogWriter;
 
 public class ReralopesTest {
 	
@@ -14,63 +15,71 @@ public class ReralopesTest {
 	
     @Before
     public void inicio() {
+    	LogWriter.iniciar("./ArchivoTest.txt");
         reralopes = new Reralopes();
     }
 
     @Test
     public void testConstructor() {
-        assertNotNull(reralopes);
-        assertEquals(0, reralopes.getCantidadAtaquesConcentrado());
-        assertFalse(reralopes.isConcentrado());       
+        assertEquals(53, reralopes.getSalud());
+        assertFalse( reralopes.isConcentrado());
+        assertEquals( 0, reralopes.getCantidadAtaquesConcentrado());
     }
-	
-	@Test
-	public void testPrimerAtaqueNoConcentrado() {
-	    int daño = reralopes.atacar();
-	    assertEquals(27, daño);
-	}
 
-	@Test
-	public void testSegundoAtaqueNoConcentrado() {
-		reralopes.atacar(); 
-	    int daño = reralopes.atacar(); 
-	    assertEquals(27, daño);
-	}
-	
-	@Test
-	public void testPrimerAtaqueConcentrado() {
-		reralopes.descansar();
-	    int daño = reralopes.atacar();
-	    assertEquals(54, daño);
-	}
+    @Test
+    public void testAtacarSinConcentracion() {
+        int daño = reralopes.atacar();
+        assertTrue( daño == 0 || daño == 27);
+    }
 
-	@Test
-	public void testTercerAtaqueConcentrado() {
-		reralopes.descansar();
-		reralopes.atacar();
-		reralopes.atacar();
-		reralopes.atacar();
-	    int daño = reralopes.atacar(); 
-	    assertEquals(27, daño);
-	    assertFalse(reralopes.isConcentrado());
-	}
-	
-	@Test
-	public void testRecibirAtaque() {
-		reralopes.recibirAtaque(50);
-	    assertEquals(3, reralopes.getSalud()); 
-	}
+    @Test
+    public void testAtacarConConcentracion() {
+        reralopes.descansar();  
+        assertTrue(reralopes.isConcentrado());
 
-	@Test
-	public void testRecibirUltimoAtaque() {
-		reralopes.recibirAtaque(53); 
-	    assertEquals(0, reralopes.getSalud()); 
-	}
-	
-	@Test
-	public void testDescansar() {
-		reralopes.descansar();
-	    assertTrue(reralopes.isConcentrado());
-	}
+        int daño = reralopes.atacar();
+        assertTrue( daño == 0 || daño == 54);
+        
+        if (daño == 54) { 
+            assertEquals( 1, reralopes.getCantidadAtaquesConcentrado());
+        }
+    }
 
+    @Test
+    public void testLimiteAtaquesConcentrado() {
+        reralopes.descansar(); 
+        int ataquesConcentrados = 0;
+
+        for (int i = 0; i < 6; i++) {
+            int daño = reralopes.atacar();
+            if (daño == 54) ataquesConcentrados++;
+        }
+
+        assertEquals(0, reralopes.getCantidadAtaquesConcentrado());
+        assertEquals(3, ataquesConcentrados);
+        assertFalse( reralopes.isConcentrado());
+    }
+
+    @Test
+    public void testRecibirAtaque() {
+        int daño = 20;
+        int saludEsperada = reralopes.getSalud() - daño;
+        reralopes.recibirAtaque(daño);
+        assertEquals( saludEsperada, reralopes.getSalud());
+        assertFalse(reralopes.isConcentrado());
+    }
+
+    @Test
+    public void testRecibirAtaqueYMuere() {
+        int daño = 60;
+        reralopes.recibirAtaque(daño);
+        assertTrue( reralopes.getSalud() <= 0);
+        assertFalse( reralopes.isConcentrado());
+    }
+
+    @Test
+    public void testDescansar() {
+        reralopes.descansar();
+        assertTrue( reralopes.isConcentrado());
+    }
 }
