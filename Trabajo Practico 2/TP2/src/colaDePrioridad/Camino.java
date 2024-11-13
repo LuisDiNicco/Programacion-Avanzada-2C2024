@@ -25,6 +25,11 @@ public class Camino implements Comparable<Camino> {
 		return costo;
 	}
 
+	@Override
+	public String toString() {
+		return "Camino "+ nodos+ " con costo = " + costo + "";
+	}
+
 	public void setCosto(int costo) {
 		this.costo = costo;
 	}
