@@ -1,8 +1,5 @@
 package juego;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import pueblo.Pueblo;
 import pueblo.TipoDePueblo;
 import raza.NombreRaza;

@@ -4,9 +4,9 @@ import pueblo.Pueblo;
 import pueblo.TipoDePueblo;
 import archivo.*;
 import colaDePrioridad.Camino;
+import colaDePrioridad.ColaDePrioridad;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
 import algoritmos.*;
@@ -161,24 +161,40 @@ public class Simulacion {
 
 			boolean caminoExitoso = false;
 			int[][] grafo = mapa.getGrafo();
-			int N = 2;
+			//int N = 2;
 
-			SolucionAlternativa solucionaAlternativa = new SolucionAlternativa(grafo);
-			List<Camino> listaCaminos = new LinkedList<Camino>();
+			//SolucionAlternativa solucionaAlternativa = new SolucionAlternativa(grafo);
+			//List<Camino> listaCaminos = new LinkedList<Camino>();
+			BuscarTodosLosCaminos busquedaCaminos= new BuscarTodosLosCaminos(grafo);
+			busquedaCaminos.encontrarTodosLosCaminos(puebloInicio -1, puebloFin-1);
+			ColaDePrioridad colaDePrioridad = busquedaCaminos.getColaDePrioridad();
 
 			while (caminoExitoso == false) {
+				//listaCaminos = solucionaAlternativa.encontrarCaminoNMinimo(puebloInicio - 1, puebloFin - 1, N);
 
-				listaCaminos = solucionaAlternativa.encontrarCaminoNMinimo(puebloInicio - 1, puebloFin - 1, N);
-
-				if (listaCaminos.size() < N) {
+				if (colaDePrioridad.estaVacio()) {
 					System.out.println(
 							"No fue posible encontrar un camino alternativo que nos permita llegar al destino.");
 					System.out.println("En cada uno de los caminos posibles nuestro ejercito muere en batalla.");
 					break;
 				}
-				caminoExitoso = simularBatalla(listaCaminos, N, mapa);
-				N++;
+				Pueblo pueblo = mapa.getPueblo(puebloInicio - 1);
+				Camino camino = colaDePrioridad.extraerMin();
+				System.out.println("Siguiendo el Camino: " + camino);
+				//caminoExitoso = simularBatalla(listaCaminos, N, mapa);
+				caminoExitoso = simularBatalla(camino,pueblo,mapa);
+				//N++;
+				if(caminoExitoso == true) {
+					System.out.println("El ejército del pueblo " + (pueblo.getNumeroPueblo() + 1) + " llegó a destino.");
+					System.out.println("Sobrevivieron " + pueblo.getEjercito().getTamaño() + " soldados!");
+					//System.out.println("Luego de " + convertirDiasAHoras(tiempoRecorrido / 24.0) + " llegamos al destino");
+				}else {
+		            System.out.println("El ejército del pueblo no pudimos llegar a destino");
+					System.out.println("Buscaremos una ruta alternativa...");
+					System.out.println("-----------------------------------------------------------------------");
+				}
 			}
+			
 		}
 		System.out.println("\n-----------------------------------------------------------------------");
 		System.out.println("\t\t\tFin de la aventura");
@@ -187,12 +203,10 @@ public class Simulacion {
 		LogWriter.cerrar();
 	}
 
-	private boolean simularBatalla(List<Camino> listaCaminos, int N, Mapa mapa) {
+	private boolean simularBatalla(Camino camino,Pueblo miPueblo,Mapa mapa) {
 
-		Camino camino = listaCaminos.get(N - 1);
+		//Camino camino = listaCaminos.get(N - 1);
 		List<Integer> listaNodos = camino.getNodos();
-
-		Pueblo miPueblo = mapa.getPueblo(puebloInicio - 1);
 
 		int proximo = puebloInicio;
 
