@@ -48,8 +48,8 @@ public class Archivo {
 		int puebloInicio = Integer.valueOf(camino[0]);
 		int puebloFin = Integer.valueOf(camino[1]);
 
-		simulacion.setPuebloFin(puebloFin);
-		simulacion.setPuebloInicio(puebloInicio);
+		simulacion.setPuebloFin(puebloFin - 1);
+		simulacion.setPuebloInicio(puebloInicio - 1);
 
 		while (sc.hasNext()) {
 			int inicio = sc.nextInt();

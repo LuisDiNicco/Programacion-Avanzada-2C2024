@@ -20,8 +20,6 @@ public class Wrives extends Raza {
 		this.rehusaAtacar = false;
 	}
 
-	// ---------------Metodos-------------------//
-
 	@Override
 	public int atacar() {
 		int daño = 0;
@@ -63,8 +61,6 @@ public class Wrives extends Raza {
 
 		LogWriter.escribirLog("\t-Wrives [" + this.idUnico + "] ha descansado. Se rehusa a atacar primero.");
 	}
-
-	// ---------------Getters-------------------//
 
 	public boolean getRehusaAtacar() {
 		return this.rehusaAtacar;

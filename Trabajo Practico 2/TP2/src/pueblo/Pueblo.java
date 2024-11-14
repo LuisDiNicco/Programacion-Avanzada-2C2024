@@ -18,8 +18,6 @@ public class Pueblo {
 		this.ejercito = new Ejercito();
 	}
 
-	// ---------------Metodos-------------------//
-
 	public void generarEjercito(Raza raza) {
 		for (int i = 0; i < cantidadHabitantes; i++) {
 			ejercito.agregar(nombreRaza.crearRaza());
@@ -33,8 +31,6 @@ public class Pueblo {
 	public void agregarAliados(Pueblo pueblo2) {
 		this.ejercito.agregarAliados(pueblo2.getEjercito(), pueblo2.getCantidadHabitantes());
 	}
-
-	// ---------------Getters-------------------//
 
 	public int getNumeroPueblo() {
 		return numeroPueblo;

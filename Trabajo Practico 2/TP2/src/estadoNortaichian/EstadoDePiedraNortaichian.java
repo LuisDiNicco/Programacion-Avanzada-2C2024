@@ -29,4 +29,3 @@ public class EstadoDePiedraNortaichian implements EstadoNortaichian {
 		return;
 	}
 }
-

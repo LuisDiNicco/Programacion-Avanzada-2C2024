@@ -4,15 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import raza.*;
 
-public class Ejercito implements Pelea {
+public class Ejercito implements Combatible {
 	private List<Raza> ejercito;
 	private int tamaño;
 
 	public Ejercito() {
 		this.ejercito = new ArrayList<Raza>();
 	}
-
-	// ---------------Composite-------------------//
 
 	@Override
 	public int atacar() {
@@ -39,8 +37,6 @@ public class Ejercito implements Pelea {
 		}
 	}
 
-	// ---------------Metodos-------------------//
-
 	public void agregar(Raza raza) {
 		this.ejercito.addLast(raza);
 		this.tamaño++;
@@ -63,8 +59,6 @@ public class Ejercito implements Pelea {
 		}
 	}
 
-	// ---------------Metodos de Apoyo-------------------//
-
 	public boolean haySoldados() {
 		return !this.ejercito.isEmpty();
 	}
@@ -72,8 +66,6 @@ public class Ejercito implements Pelea {
 	public Raza getPrimero() {
 		return this.ejercito.getFirst();
 	}
-
-	// ---------------Getters-------------------//
 
 	public int getTamaño() {
 		return tamaño;
