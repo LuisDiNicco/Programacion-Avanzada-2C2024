@@ -68,7 +68,7 @@ public class RadaiteranTest {
 		assertEquals(radaiteran.getDañoBase(), dañoActual);
 
 	}
-	
+
 	@After
 	public void borrarArchivo() {
 		LogWriter.cerrar();

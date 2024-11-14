@@ -139,7 +139,7 @@ public class NortaichianTest {
 
 		assertTrue(nortaichian.getEstado() instanceof EstadoNormalNortaichian);
 	}
-	
+
 	@After
 	public void borrarArchivo() {
 		LogWriter.cerrar();

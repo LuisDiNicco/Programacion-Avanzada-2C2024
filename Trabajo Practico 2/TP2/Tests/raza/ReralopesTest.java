@@ -4,6 +4,9 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import java.io.File;
+import java.util.LinkedList;
+import java.util.List;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,8 +33,20 @@ public class ReralopesTest {
 
 	@Test
 	public void testAtacarSinConcentracion() {
+		List<Boolean> secuencia = new LinkedList<Boolean>();
+		secuencia.add(true);
+		reralopes.setSecuenciaAtaque(secuencia);
 		int daño = reralopes.atacar();
-		assertTrue(daño == 0 || daño == 27);
+		assertTrue(daño == 27);
+	}
+
+	@Test
+	public void testErrarSinConcentracion() {
+		List<Boolean> secuencia = new LinkedList<Boolean>();
+		secuencia.add(false);
+		reralopes.setSecuenciaAtaque(secuencia);
+		int daño = reralopes.atacar();
+		assertTrue(daño == 0);
 	}
 
 	@Test
@@ -58,7 +73,6 @@ public class ReralopesTest {
 		}
 
 		assertEquals(ataquesConcentrados, reralopes.getCantidadAtaquesConcentrado());
-		// assertEquals(3, ataquesConcentrados);
 		assertTrue(reralopes.isConcentrado());
 	}
 
@@ -96,7 +110,7 @@ public class ReralopesTest {
 		reralopes.descansar();
 		assertTrue(reralopes.isConcentrado());
 	}
-	
+
 	@After
 	public void borrarArchivo() {
 		LogWriter.cerrar();

@@ -44,5 +44,4 @@ public class BuscarTodosLosCaminos {
 	public ColaDePrioridad getColaDePrioridad() {
 		return colaDePrioridad;
 	}
-
 }

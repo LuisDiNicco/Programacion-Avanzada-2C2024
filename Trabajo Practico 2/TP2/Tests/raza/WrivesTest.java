@@ -74,7 +74,7 @@ public class WrivesTest {
 		assertEquals(108 + 50, wrives.getSalud());
 		assertTrue(wrives.getRehusaAtacar());
 	}
-	
+
 	@After
 	public void borrarArchivo() {
 		LogWriter.cerrar();

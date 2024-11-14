@@ -46,6 +46,7 @@ public class Simulacion {
 		int[] distancias = dijkstra.getVectorDistancia();
 		if (distancias[puebloFin] == Integer.MAX_VALUE) {
 			System.out.println("Es imposible llegar desde el pueblo de inicio hasta el destino.");
+			LogWriter.escribirNoHayCaminoPosible();
 			return;
 		}
 
@@ -151,6 +152,7 @@ public class Simulacion {
 			System.out.println("Sobrevivieron " + miPueblo.getEjercito().getTamaño() + " soldados!");
 			System.out.println("Luego de " + convertirDiasAHoras(tiempoRecorrido / 24.0) + " llegamos al destino");
 			System.out.println("Tuvieron que recorrer " + distancias[puebloFin] + " kilometros.");
+			LogWriter.escribirLlegadaADestino();
 		} else {
 			System.out.println("\n-----------------------------------------------------------------------");
 			System.out.println("\t\t\tLa aventura duró " + convertirDiasAHoras(tiempoRecorrido / 24.0));
@@ -158,7 +160,10 @@ public class Simulacion {
 
 			System.out.println("El ejército de " + (miPueblo.getNumeroPueblo() + 1) + " no llegó a destino.");
 			System.out.println("Siguiendo la ruta mas corta no fue posible llegar a destino");
+			LogWriter.escribirMuerteEnBatalla();
+			
 			System.out.println("Buscaremos una ruta alternativa...");
+			LogWriter.escribirBusquedaCaminosAlternativos();
 
 			boolean caminoExitoso = false;
 			int[][] grafo = mapa.getGrafo();
@@ -174,6 +179,7 @@ public class Simulacion {
 					System.out.println(
 							"No fue posible encontrar un camino alternativo que nos permita llegar al destino.");
 					System.out.println("En cada uno de los caminos posibles nuestro ejercito muere en batalla.");
+					LogWriter.escribirNoFuePosibleEncontrarOtroCamino();
 					break;
 				}
 
@@ -189,9 +195,9 @@ public class Simulacion {
 				caminoExitoso = simularBatalla(camino, pueblo, mapa);
 
 				if (caminoExitoso == true) {
-					System.out
-							.println("El ejército del pueblo " + (pueblo.getNumeroPueblo() + 1) + " llegó a destino.");
+					System.out.println("El ejército del pueblo " + (pueblo.getNumeroPueblo() + 1) + " llegó a destino.");
 					System.out.println("Sobrevivieron " + pueblo.getEjercito().getTamaño() + " soldados!");
+					LogWriter.escribirLlegadaADestino();
 				} else {
 					System.out.println("El ejército del pueblo no pudo llegar a destino");
 					System.out.println("Buscaremos una ruta alternativa...");
@@ -211,10 +217,13 @@ public class Simulacion {
 
 		List<Integer> listaNodos = camino.getNodos();
 
-		int proximo = puebloInicio;
-
+		int proximo = listaNodos.removeFirst();
+		LogWriter.escribirTextoIncioBatalla(proximo+1);
+		
 		while (miPueblo.hayEjercito() && !listaNodos.isEmpty()) {
 			proximo = listaNodos.removeFirst();
+			LogWriter.escribirSeparador();
+			LogWriter.escribirTextoPartida(proximo);
 
 			Pueblo puebloAVisitar = mapa.getPueblo(proximo);
 
@@ -244,13 +253,11 @@ public class Simulacion {
 		String resultado = "";
 
 		if (diasEnteros >= 0) {
-			resultado += diasEnteros + ((diasEnteros == 1 || diasEnteros == 0) ? " día " : " días ");
+			resultado += diasEnteros + ((diasEnteros == 1) ? " día " : " días ");
 		}
 
 		if (horasEnteras >= 0) {
-			if (diasEnteros > 0) {
-				resultado += "y ";
-			}
+			resultado += "y ";
 			resultado += horasEnteras + (horasEnteras == 1 ? " hora " : " horas ");
 		}
 

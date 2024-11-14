@@ -80,7 +80,7 @@ public class MapaTest {
 
 		Mapa.reiniciarMapa();
 	}
-	
+
 	@After
 	public void borrarArchivo() {
 		LogWriter.cerrar();

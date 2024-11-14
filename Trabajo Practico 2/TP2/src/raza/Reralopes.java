@@ -103,4 +103,8 @@ public class Reralopes extends Raza {
 
 		this.secuenciaAtaque.addAll(listaAtaque);
 	}
+
+	public void setSecuenciaAtaque(List<Boolean> secuencia) {
+		this.secuenciaAtaque = secuencia;
+	}
 }

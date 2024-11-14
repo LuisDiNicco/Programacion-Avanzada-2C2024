@@ -4,362 +4,1520 @@ Partimos desde el pueblo: 0
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 Partiendo hacia el pueblo: 2...
+Resultó ser un pueblo aliado, podremos descansar!
+La mitad del ejercito del poblado se sumará a nuestro ejercito!
+Se sumará la mitad de su ejercito
+	-Reralopes [350]  se ha concentrado.
+	-Reralopes [349]  se ha concentrado.
+	-Reralopes [348]  se ha concentrado.
+	-Reralopes [347]  se ha concentrado.
+	-Reralopes [346]  se ha concentrado.
+	-Reralopes [345]  se ha concentrado.
+	-Reralopes [344]  se ha concentrado.
+	-Reralopes [343]  se ha concentrado.
+	-Reralopes [342]  se ha concentrado.
+	-Reralopes [341]  se ha concentrado.
+	-Reralopes [340]  se ha concentrado.
+	-Reralopes [339]  se ha concentrado.
+	-Reralopes [338]  se ha concentrado.
+	-Reralopes [337]  se ha concentrado.
+	-Reralopes [336]  se ha concentrado.
+	-Wrives [235] ha descansado. Se rehusa a atacar primero.
+	-Wrives [236] ha descansado. Se rehusa a atacar primero.
+	-Wrives [237] ha descansado. Se rehusa a atacar primero.
+	-Wrives [238] ha descansado. Se rehusa a atacar primero.
+	-Wrives [239] ha descansado. Se rehusa a atacar primero.
+	-Wrives [240] ha descansado. Se rehusa a atacar primero.
+	-Wrives [241] ha descansado. Se rehusa a atacar primero.
+	-Wrives [242] ha descansado. Se rehusa a atacar primero.
+	-Wrives [243] ha descansado. Se rehusa a atacar primero.
+	-Wrives [244] ha descansado. Se rehusa a atacar primero.
+	-Wrives [245] ha descansado. Se rehusa a atacar primero.
+	-Wrives [246] ha descansado. Se rehusa a atacar primero.
+	-Wrives [247] ha descansado. Se rehusa a atacar primero.
+	-Wrives [248] ha descansado. Se rehusa a atacar primero.
+	-Wrives [249] ha descansado. Se rehusa a atacar primero.
+	-Wrives [250] ha descansado. Se rehusa a atacar primero.
+	-Wrives [251] ha descansado. Se rehusa a atacar primero.
+	-Wrives [252] ha descansado. Se rehusa a atacar primero.
+	-Wrives [253] ha descansado. Se rehusa a atacar primero.
+	-Wrives [254] ha descansado. Se rehusa a atacar primero.
+	-Wrives [255] ha descansado. Se rehusa a atacar primero.
+	-Wrives [256] ha descansado. Se rehusa a atacar primero.
+	-Wrives [257] ha descansado. Se rehusa a atacar primero.
+	-Wrives [258] ha descansado. Se rehusa a atacar primero.
+	-Wrives [259] ha descansado. Se rehusa a atacar primero.
+	-Wrives [260] ha descansado. Se rehusa a atacar primero.
+	-Wrives [261] ha descansado. Se rehusa a atacar primero.
+	-Wrives [262] ha descansado. Se rehusa a atacar primero.
+	-Wrives [263] ha descansado. Se rehusa a atacar primero.
+	-Wrives [264] ha descansado. Se rehusa a atacar primero.
+	-Wrives [265] ha descansado. Se rehusa a atacar primero.
+	-Wrives [266] ha descansado. Se rehusa a atacar primero.
+	-Wrives [267] ha descansado. Se rehusa a atacar primero.
+	-Wrives [268] ha descansado. Se rehusa a atacar primero.
+	-Wrives [269] ha descansado. Se rehusa a atacar primero.
+	-Wrives [270] ha descansado. Se rehusa a atacar primero.
+	-Wrives [271] ha descansado. Se rehusa a atacar primero.
+	-Wrives [272] ha descansado. Se rehusa a atacar primero.
+	-Wrives [273] ha descansado. Se rehusa a atacar primero.
+	-Wrives [274] ha descansado. Se rehusa a atacar primero.
+	-Wrives [275] ha descansado. Se rehusa a atacar primero.
+	-Wrives [276] ha descansado. Se rehusa a atacar primero.
+	-Wrives [277] ha descansado. Se rehusa a atacar primero.
+	-Wrives [278] ha descansado. Se rehusa a atacar primero.
+	-Wrives [279] ha descansado. Se rehusa a atacar primero.
+	-Wrives [280] ha descansado. Se rehusa a atacar primero.
+	-Wrives [281] ha descansado. Se rehusa a atacar primero.
+	-Wrives [282] ha descansado. Se rehusa a atacar primero.
+	-Wrives [283] ha descansado. Se rehusa a atacar primero.
+	-Wrives [284] ha descansado. Se rehusa a atacar primero.
+	-Wrives [285] ha descansado. Se rehusa a atacar primero.
+	-Wrives [286] ha descansado. Se rehusa a atacar primero.
+	-Wrives [287] ha descansado. Se rehusa a atacar primero.
+	-Wrives [288] ha descansado. Se rehusa a atacar primero.
+	-Wrives [289] ha descansado. Se rehusa a atacar primero.
+	-Wrives [290] ha descansado. Se rehusa a atacar primero.
+	-Wrives [291] ha descansado. Se rehusa a atacar primero.
+	-Wrives [292] ha descansado. Se rehusa a atacar primero.
+	-Wrives [293] ha descansado. Se rehusa a atacar primero.
+	-Wrives [294] ha descansado. Se rehusa a atacar primero.
+	-Wrives [295] ha descansado. Se rehusa a atacar primero.
+	-Wrives [296] ha descansado. Se rehusa a atacar primero.
+	-Wrives [297] ha descansado. Se rehusa a atacar primero.
+	-Wrives [298] ha descansado. Se rehusa a atacar primero.
+	-Wrives [299] ha descansado. Se rehusa a atacar primero.
+	-Wrives [300] ha descansado. Se rehusa a atacar primero.
+	-Wrives [301] ha descansado. Se rehusa a atacar primero.
+	-Wrives [302] ha descansado. Se rehusa a atacar primero.
+	-Wrives [303] ha descansado. Se rehusa a atacar primero.
+	-Wrives [304] ha descansado. Se rehusa a atacar primero.
+	-Wrives [305] ha descansado. Se rehusa a atacar primero.
+	-Wrives [306] ha descansado. Se rehusa a atacar primero.
+	-Wrives [307] ha descansado. Se rehusa a atacar primero.
+	-Wrives [308] ha descansado. Se rehusa a atacar primero.
+	-Wrives [309] ha descansado. Se rehusa a atacar primero.
+	-Wrives [310] ha descansado. Se rehusa a atacar primero.
+	-Wrives [311] ha descansado. Se rehusa a atacar primero.
+	-Wrives [312] ha descansado. Se rehusa a atacar primero.
+	-Wrives [313] ha descansado. Se rehusa a atacar primero.
+	-Wrives [314] ha descansado. Se rehusa a atacar primero.
+	-Wrives [315] ha descansado. Se rehusa a atacar primero.
+	-Wrives [316] ha descansado. Se rehusa a atacar primero.
+	-Wrives [317] ha descansado. Se rehusa a atacar primero.
+	-Wrives [318] ha descansado. Se rehusa a atacar primero.
+	-Wrives [319] ha descansado. Se rehusa a atacar primero.
+	-Wrives [320] ha descansado. Se rehusa a atacar primero.
+	-Wrives [321] ha descansado. Se rehusa a atacar primero.
+	-Wrives [322] ha descansado. Se rehusa a atacar primero.
+	-Wrives [323] ha descansado. Se rehusa a atacar primero.
+	-Wrives [324] ha descansado. Se rehusa a atacar primero.
+	-Wrives [325] ha descansado. Se rehusa a atacar primero.
+	-Wrives [326] ha descansado. Se rehusa a atacar primero.
+	-Wrives [327] ha descansado. Se rehusa a atacar primero.
+	-Wrives [328] ha descansado. Se rehusa a atacar primero.
+	-Wrives [329] ha descansado. Se rehusa a atacar primero.
+	-Wrives [330] ha descansado. Se rehusa a atacar primero.
+	-Wrives [331] ha descansado. Se rehusa a atacar primero.
+	-Wrives [332] ha descansado. Se rehusa a atacar primero.
+	-Wrives [333] ha descansado. Se rehusa a atacar primero.
+	-Wrives [334] ha descansado. Se rehusa a atacar primero.
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+Partiendo hacia el pueblo: 3...
 Resultó ser un pueblo enemigo, debemos vencerlos para poder avanzar!
-Comienza la batalla en el pueblo: 2
+Comienza la batalla en el pueblo: 3
 					-----------------------------------
 								Turno: 1
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [226] ataca haciendo: 113 de daño
-		--Nortaichian [237] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [350]  ataca con 54 puntos de daño!
+		--Nortaichian [367] recibe 54 puntos de daño. Salud restante: 12
 Ataque del ejercito enemigo:
-	-Nortaichian [238] atacó haciendo 18 de daño.
-		--Wrives [226] recibe 36 puntos de daño. Salud restante: 72
+	-Nortaichian [367] atacó haciendo 36 de daño.
+		--Nortaichian [367] se cura 2 puntos. Salud actual: 14
+		--Reralopes [350]  recibe 36 puntos de daño. Salud restante: 17
 					-----------------------------------
 								Turno: 2
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [226] ataca haciendo: 113 de daño
-		--Nortaichian [238] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [350]  ataca con 27 puntos de daño!
+		--Nortaichian [367] recibe 27 puntos de daño. Su salud era de: 14. Ha muerto! 
 Ataque del ejercito enemigo:
-	-Nortaichian [239] atacó haciendo 18 de daño.
-		--Wrives [226] recibe 36 puntos de daño. Salud restante: 36
+	-Nortaichian [368] atacó haciendo 18 de daño.
+		--Reralopes [350] recibe 18 puntos de daño. Su salud era de: 17. Quedo con: -1 Ha muerto! 
 					-----------------------------------
 								Turno: 3
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [226] ataca haciendo: 226 de daño
-		--Nortaichian [239] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [349]  ataca con 54 puntos de daño!
+		--Nortaichian [368] recibe 54 puntos de daño. Salud restante: 12
 Ataque del ejercito enemigo:
-	-Nortaichian [240] atacó haciendo 18 de daño.
-		--Wrives [226] recibe 36 puntos de daño. Su salud era de: 18. Ha muerto! 
+	-Nortaichian [368] atacó haciendo 36 de daño.
+		--Nortaichian [368] se cura 2 puntos. Salud actual: 14
+		--Reralopes [349]  recibe 36 puntos de daño. Salud restante: 17
 					-----------------------------------
 								Turno: 4
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [227] ataca haciendo: 113 de daño
-		--Nortaichian [240] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [349]  ataca con 27 puntos de daño!
+		--Nortaichian [368] recibe 27 puntos de daño. Su salud era de: 14. Ha muerto! 
 Ataque del ejercito enemigo:
-	-Nortaichian [241] atacó haciendo 18 de daño.
-		--Wrives [227] recibe 36 puntos de daño. Salud restante: 72
+	-Nortaichian [369] atacó haciendo 18 de daño.
+		--Reralopes [349] recibe 18 puntos de daño. Su salud era de: 17. Quedo con: -1 Ha muerto! 
 					-----------------------------------
 								Turno: 5
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [227] ataca haciendo: 113 de daño
-		--Nortaichian [241] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [348]  fallo su ataque, no hizo daño!
+		--Nortaichian [369] recibe 0 puntos de daño. Salud restante: 66
 Ataque del ejercito enemigo:
-	-Nortaichian [242] atacó haciendo 18 de daño.
-		--Wrives [227] recibe 36 puntos de daño. Salud restante: 36
+	-Nortaichian [369] atacó haciendo 36 de daño.
+		--Reralopes [348]  recibe 36 puntos de daño. Salud restante: 17
 					-----------------------------------
 								Turno: 6
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [227] ataca haciendo: 226 de daño
-		--Nortaichian [242] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [348]  ataca con 27 puntos de daño!
+		--Nortaichian [369] recibe 27 puntos de daño. Salud restante: 39
 Ataque del ejercito enemigo:
-	-Nortaichian [243] atacó haciendo 18 de daño.
-		--Wrives [227] recibe 36 puntos de daño. Su salud era de: 18. Ha muerto! 
+	-Nortaichian [369] atacó haciendo 36 de daño.
+		--Nortaichian [369] se cura 2 puntos. Salud actual: 41
+		--Reralopes [348] recibe 36 puntos de daño. Su salud era de: 17. Quedo con: -19 Ha muerto! 
 					-----------------------------------
 								Turno: 7
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [228] ataca haciendo: 113 de daño
-		--Nortaichian [243] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [347]  fallo su ataque, no hizo daño!
+		--Nortaichian [369] recibe 0 puntos de daño. Salud restante: 41
 Ataque del ejercito enemigo:
-	-Nortaichian [244] atacó haciendo 18 de daño.
-		--Wrives [228] recibe 36 puntos de daño. Salud restante: 72
+	-Nortaichian [369] atacó haciendo 18 de daño.
+		--Nortaichian [369] se cura 2 puntos. Salud actual: 43
+		--Reralopes [347]  recibe 18 puntos de daño. Salud restante: 35
 					-----------------------------------
 								Turno: 8
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [228] ataca haciendo: 113 de daño
-		--Nortaichian [244] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [347]  ataca con 27 puntos de daño!
+		--Nortaichian [369] recibe 27 puntos de daño. Salud restante: 16
 Ataque del ejercito enemigo:
-	-Nortaichian [245] atacó haciendo 18 de daño.
-		--Wrives [228] recibe 36 puntos de daño. Salud restante: 36
+	-Nortaichian [369] atacó haciendo 36 de daño.
+		--Nortaichian [369] se cura 2 puntos. Salud actual: 18
+		--Reralopes [347] recibe 36 puntos de daño. Su salud era de: 35. Quedo con: -1 Ha muerto! 
 					-----------------------------------
 								Turno: 9
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [228] ataca haciendo: 226 de daño
-		--Nortaichian [245] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [346]  fallo su ataque, no hizo daño!
+		--Nortaichian [369] recibe 0 puntos de daño. Salud restante: 18
 Ataque del ejercito enemigo:
-	-Nortaichian [246] atacó haciendo 18 de daño.
-		--Wrives [228] recibe 36 puntos de daño. Su salud era de: 18. Ha muerto! 
+	-Nortaichian [369] atacó haciendo 36 de daño.
+		--Nortaichian [369] se cura 2 puntos. Salud actual: 20
+		--Reralopes [346]  recibe 36 puntos de daño. Salud restante: 17
 					-----------------------------------
 								Turno: 10
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [229] ataca haciendo: 113 de daño
-		--Nortaichian [246] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [346]  ataca con 27 puntos de daño!
+		--Nortaichian [369] recibe 27 puntos de daño. Su salud era de: 20. Ha muerto! 
 Ataque del ejercito enemigo:
-	-Nortaichian [247] atacó haciendo 18 de daño.
-		--Wrives [229] recibe 36 puntos de daño. Salud restante: 72
+	-Nortaichian [370] atacó haciendo 18 de daño.
+		--Reralopes [346] recibe 18 puntos de daño. Su salud era de: 17. Quedo con: -1 Ha muerto! 
 					-----------------------------------
 								Turno: 11
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [229] ataca haciendo: 113 de daño
-		--Nortaichian [247] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [345]  ataca con 54 puntos de daño!
+		--Nortaichian [370] recibe 54 puntos de daño. Salud restante: 12
 Ataque del ejercito enemigo:
-	-Nortaichian [248] atacó haciendo 18 de daño.
-		--Wrives [229] recibe 36 puntos de daño. Salud restante: 36
+	-Nortaichian [370] atacó haciendo 36 de daño.
+		--Nortaichian [370] se cura 2 puntos. Salud actual: 14
+		--Reralopes [345]  recibe 36 puntos de daño. Salud restante: 17
 					-----------------------------------
 								Turno: 12
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [229] ataca haciendo: 226 de daño
-		--Nortaichian [248] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [345]  fallo su ataque, no hizo daño!
+		--Nortaichian [370] recibe 0 puntos de daño. Salud restante: 14
 Ataque del ejercito enemigo:
-	-Nortaichian [249] atacó haciendo 18 de daño.
-		--Wrives [229] recibe 36 puntos de daño. Su salud era de: 18. Ha muerto! 
+	-Nortaichian [370] atacó haciendo 36 de daño.
+		--Nortaichian [370] se cura 2 puntos. Salud actual: 16
+		--Reralopes [345] recibe 36 puntos de daño. Su salud era de: 17. Quedo con: -19 Ha muerto! 
 					-----------------------------------
 								Turno: 13
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [230] ataca haciendo: 113 de daño
-		--Nortaichian [249] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [344]  ataca con 54 puntos de daño!
+		--Nortaichian [370] recibe 54 puntos de daño. Su salud era de: 16. Ha muerto! 
 Ataque del ejercito enemigo:
-	-Nortaichian [250] atacó haciendo 18 de daño.
-		--Wrives [230] recibe 36 puntos de daño. Salud restante: 72
+	-Nortaichian [371] atacó haciendo 18 de daño.
+		--Reralopes [344]  recibe 18 puntos de daño. Salud restante: 35
 					-----------------------------------
 								Turno: 14
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [230] ataca haciendo: 113 de daño
-		--Nortaichian [250] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [344]  fallo su ataque, no hizo daño!
+		--Nortaichian [371] recibe 0 puntos de daño. Salud restante: 66
 Ataque del ejercito enemigo:
-	-Nortaichian [251] atacó haciendo 18 de daño.
-		--Wrives [230] recibe 36 puntos de daño. Salud restante: 36
+	-Nortaichian [371] atacó haciendo 36 de daño.
+		--Reralopes [344] recibe 36 puntos de daño. Su salud era de: 35. Quedo con: -1 Ha muerto! 
 					-----------------------------------
 								Turno: 15
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [230] ataca haciendo: 226 de daño
-		--Nortaichian [251] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [343]  fallo su ataque, no hizo daño!
+		--Nortaichian [371] recibe 0 puntos de daño. Salud restante: 66
 Ataque del ejercito enemigo:
-	-Nortaichian [252] atacó haciendo 18 de daño.
-		--Wrives [230] recibe 36 puntos de daño. Su salud era de: 18. Ha muerto! 
+	-Nortaichian [371] atacó haciendo 36 de daño.
+		--Reralopes [343]  recibe 36 puntos de daño. Salud restante: 17
 					-----------------------------------
 								Turno: 16
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [231] ataca haciendo: 113 de daño
-		--Nortaichian [252] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [343]  ataca con 27 puntos de daño!
+		--Nortaichian [371] recibe 27 puntos de daño. Salud restante: 39
 Ataque del ejercito enemigo:
-	-Nortaichian [253] atacó haciendo 18 de daño.
-		--Wrives [231] recibe 36 puntos de daño. Salud restante: 72
+	-Nortaichian [371] atacó haciendo 18 de daño.
+		--Nortaichian [371] se cura 2 puntos. Salud actual: 41
+		--Reralopes [343] recibe 18 puntos de daño. Su salud era de: 17. Quedo con: -1 Ha muerto! 
 					-----------------------------------
 								Turno: 17
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [231] ataca haciendo: 113 de daño
-		--Nortaichian [253] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [342]  ataca con 54 puntos de daño!
+		--Nortaichian [371] recibe 54 puntos de daño. Su salud era de: 41. Ha muerto! 
 Ataque del ejercito enemigo:
-	-Nortaichian [254] atacó haciendo 18 de daño.
-		--Wrives [231] recibe 36 puntos de daño. Salud restante: 36
+	-Nortaichian [372] atacó haciendo 18 de daño.
+		--Reralopes [342]  recibe 18 puntos de daño. Salud restante: 35
 					-----------------------------------
 								Turno: 18
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [231] ataca haciendo: 226 de daño
-		--Nortaichian [254] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [342]  fallo su ataque, no hizo daño!
+		--Nortaichian [372] recibe 0 puntos de daño. Salud restante: 66
 Ataque del ejercito enemigo:
-	-Nortaichian [255] atacó haciendo 18 de daño.
-		--Wrives [231] recibe 36 puntos de daño. Su salud era de: 18. Ha muerto! 
+	-Nortaichian [372] atacó haciendo 36 de daño.
+		--Reralopes [342] recibe 36 puntos de daño. Su salud era de: 35. Quedo con: -1 Ha muerto! 
 					-----------------------------------
 								Turno: 19
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [232] ataca haciendo: 113 de daño
-		--Nortaichian [255] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [341]  fallo su ataque, no hizo daño!
+		--Nortaichian [372] recibe 0 puntos de daño. Salud restante: 66
 Ataque del ejercito enemigo:
-	-Nortaichian [256] atacó haciendo 18 de daño.
-		--Wrives [232] recibe 36 puntos de daño. Salud restante: 72
+	-Nortaichian [372] atacó haciendo 36 de daño.
+		--Reralopes [341]  recibe 36 puntos de daño. Salud restante: 17
 					-----------------------------------
 								Turno: 20
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [232] ataca haciendo: 113 de daño
-		--Nortaichian [256] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [341]  ataca con 27 puntos de daño!
+		--Nortaichian [372] recibe 27 puntos de daño. Salud restante: 39
 Ataque del ejercito enemigo:
-	-Nortaichian [257] atacó haciendo 18 de daño.
-		--Wrives [232] recibe 36 puntos de daño. Salud restante: 36
+	-Nortaichian [372] atacó haciendo 18 de daño.
+		--Nortaichian [372] se cura 2 puntos. Salud actual: 41
+		--Reralopes [341] recibe 18 puntos de daño. Su salud era de: 17. Quedo con: -1 Ha muerto! 
 					-----------------------------------
 								Turno: 21
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [232] ataca haciendo: 226 de daño
-		--Nortaichian [257] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [340]  ataca con 54 puntos de daño!
+		--Nortaichian [372] recibe 54 puntos de daño. Su salud era de: 41. Ha muerto! 
 Ataque del ejercito enemigo:
-	-Nortaichian [258] atacó haciendo 18 de daño.
-		--Wrives [232] recibe 36 puntos de daño. Su salud era de: 18. Ha muerto! 
+	-Nortaichian [373] atacó haciendo 18 de daño.
+		--Reralopes [340]  recibe 18 puntos de daño. Salud restante: 35
 					-----------------------------------
 								Turno: 22
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [233] ataca haciendo: 113 de daño
-		--Nortaichian [258] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [340]  fallo su ataque, no hizo daño!
+		--Nortaichian [373] recibe 0 puntos de daño. Salud restante: 66
 Ataque del ejercito enemigo:
-	-Nortaichian [259] atacó haciendo 18 de daño.
-		--Wrives [233] recibe 36 puntos de daño. Salud restante: 72
+	-Nortaichian [373] atacó haciendo 36 de daño.
+		--Reralopes [340] recibe 36 puntos de daño. Su salud era de: 35. Quedo con: -1 Ha muerto! 
 					-----------------------------------
 								Turno: 23
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [233] ataca haciendo: 113 de daño
-		--Nortaichian [259] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [339]  ataca con 54 puntos de daño!
+		--Nortaichian [373] recibe 54 puntos de daño. Salud restante: 12
 Ataque del ejercito enemigo:
-	-Nortaichian [260] atacó haciendo 18 de daño.
-		--Wrives [233] recibe 36 puntos de daño. Salud restante: 36
+	-Nortaichian [373] atacó haciendo 36 de daño.
+		--Nortaichian [373] se cura 2 puntos. Salud actual: 14
+		--Reralopes [339]  recibe 36 puntos de daño. Salud restante: 17
 					-----------------------------------
 								Turno: 24
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [233] ataca haciendo: 226 de daño
-		--Nortaichian [260] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [339]  fallo su ataque, no hizo daño!
+		--Nortaichian [373] recibe 0 puntos de daño. Salud restante: 14
 Ataque del ejercito enemigo:
-	-Nortaichian [261] atacó haciendo 18 de daño.
-		--Wrives [233] recibe 36 puntos de daño. Su salud era de: 18. Ha muerto! 
+	-Nortaichian [373] atacó haciendo 18 de daño.
+		--Nortaichian [373] se cura 2 puntos. Salud actual: 16
+		--Reralopes [339] recibe 18 puntos de daño. Su salud era de: 17. Quedo con: -1 Ha muerto! 
 					-----------------------------------
 								Turno: 25
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [234] ataca haciendo: 113 de daño
-		--Nortaichian [261] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [338]  ataca con 54 puntos de daño!
+		--Nortaichian [373] recibe 54 puntos de daño. Su salud era de: 16. Ha muerto! 
 Ataque del ejercito enemigo:
-	-Nortaichian [262] atacó haciendo 18 de daño.
-		--Wrives [234] recibe 36 puntos de daño. Salud restante: 72
+	-Nortaichian [374] atacó haciendo 18 de daño.
+		--Reralopes [338]  recibe 18 puntos de daño. Salud restante: 35
 					-----------------------------------
 								Turno: 26
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [234] ataca haciendo: 113 de daño
-		--Nortaichian [262] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [338]  ataca con 27 puntos de daño!
+		--Nortaichian [374] recibe 27 puntos de daño. Salud restante: 39
 Ataque del ejercito enemigo:
-	-Nortaichian [263] atacó haciendo 18 de daño.
-		--Wrives [234] recibe 36 puntos de daño. Salud restante: 36
+	-Nortaichian [374] atacó haciendo 36 de daño.
+		--Nortaichian [374] se cura 2 puntos. Salud actual: 41
+		--Reralopes [338] recibe 36 puntos de daño. Su salud era de: 35. Quedo con: -1 Ha muerto! 
 					-----------------------------------
 								Turno: 27
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [234] ataca haciendo: 226 de daño
-		--Nortaichian [263] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [337]  ataca con 54 puntos de daño!
+		--Nortaichian [374] recibe 54 puntos de daño. Su salud era de: 41. Ha muerto! 
 Ataque del ejercito enemigo:
-	-Nortaichian [264] atacó haciendo 18 de daño.
-		--Wrives [234] recibe 36 puntos de daño. Su salud era de: 18. Ha muerto! 
+	-Nortaichian [375] atacó haciendo 18 de daño.
+		--Reralopes [337]  recibe 18 puntos de daño. Salud restante: 35
 					-----------------------------------
 								Turno: 28
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [235] ataca haciendo: 113 de daño
-		--Nortaichian [264] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [337]  fallo su ataque, no hizo daño!
+		--Nortaichian [375] recibe 0 puntos de daño. Salud restante: 66
 Ataque del ejercito enemigo:
-	-Nortaichian [265] atacó haciendo 18 de daño.
-		--Wrives [235] recibe 36 puntos de daño. Salud restante: 72
+	-Nortaichian [375] atacó haciendo 36 de daño.
+		--Reralopes [337] recibe 36 puntos de daño. Su salud era de: 35. Quedo con: -1 Ha muerto! 
 					-----------------------------------
 								Turno: 29
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [235] ataca haciendo: 113 de daño
-		--Nortaichian [265] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [336]  fallo su ataque, no hizo daño!
+		--Nortaichian [375] recibe 0 puntos de daño. Salud restante: 66
 Ataque del ejercito enemigo:
-	-Nortaichian [266] atacó haciendo 18 de daño.
-		--Wrives [235] recibe 36 puntos de daño. Salud restante: 36
+	-Nortaichian [375] atacó haciendo 36 de daño.
+		--Reralopes [336]  recibe 36 puntos de daño. Salud restante: 17
 					-----------------------------------
 								Turno: 30
 					-----------------------------------
 Ataque de nuestro ejercito:
-	-Wrives [235] ataca haciendo: 226 de daño
-		--Nortaichian [266] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+	-Reralopes [336]  ataca con 27 puntos de daño!
+		--Nortaichian [375] recibe 27 puntos de daño. Salud restante: 39
 Ataque del ejercito enemigo:
-	-Nortaichian [267] atacó haciendo 18 de daño.
-		--Wrives [235] recibe 36 puntos de daño. Su salud era de: 18. Ha muerto! 
+	-Nortaichian [375] atacó haciendo 18 de daño.
+		--Nortaichian [375] se cura 2 puntos. Salud actual: 41
+		--Reralopes [336] recibe 18 puntos de daño. Su salud era de: 17. Quedo con: -1 Ha muerto! 
+					-----------------------------------
+								Turno: 31
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [235] ataca haciendo: 0 de daño
+		--Nortaichian [375] recibe 0 puntos de daño. Salud restante: 41
+Ataque del ejercito enemigo:
+	-Nortaichian [375] atacó haciendo 36 de daño.
+		--Nortaichian [375] se cura 2 puntos. Salud actual: 43
+		--Wrives [235] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 32
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [235] ataca haciendo: 113 de daño
+		--Nortaichian [375] recibe 113 puntos de daño. Su salud era de: 43. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [376] atacó haciendo 18 de daño.
+		--Wrives [235] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 33
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [235] ataca haciendo: 113 de daño
+		--Nortaichian [376] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [377] atacó haciendo 18 de daño.
+		--Wrives [235] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 34
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [235] ataca haciendo: 226 de daño
+		--Nortaichian [377] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [378] atacó haciendo 18 de daño.
+		--Wrives [235] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 35
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [236] ataca haciendo: 0 de daño
+		--Nortaichian [378] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [378] atacó haciendo 36 de daño.
+		--Wrives [236] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 36
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [236] ataca haciendo: 113 de daño
+		--Nortaichian [378] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [379] atacó haciendo 18 de daño.
+		--Wrives [236] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 37
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [236] ataca haciendo: 113 de daño
+		--Nortaichian [379] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [380] atacó haciendo 18 de daño.
+		--Wrives [236] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 38
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [236] ataca haciendo: 226 de daño
+		--Nortaichian [380] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [381] atacó haciendo 18 de daño.
+		--Wrives [236] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 39
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [237] ataca haciendo: 0 de daño
+		--Nortaichian [381] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [381] atacó haciendo 36 de daño.
+		--Wrives [237] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 40
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [237] ataca haciendo: 113 de daño
+		--Nortaichian [381] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [382] atacó haciendo 18 de daño.
+		--Wrives [237] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 41
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [237] ataca haciendo: 113 de daño
+		--Nortaichian [382] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [383] atacó haciendo 18 de daño.
+		--Wrives [237] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 42
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [237] ataca haciendo: 226 de daño
+		--Nortaichian [383] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [384] atacó haciendo 18 de daño.
+		--Wrives [237] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 43
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [238] ataca haciendo: 0 de daño
+		--Nortaichian [384] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [384] atacó haciendo 36 de daño.
+		--Wrives [238] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 44
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [238] ataca haciendo: 113 de daño
+		--Nortaichian [384] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [385] atacó haciendo 18 de daño.
+		--Wrives [238] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 45
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [238] ataca haciendo: 113 de daño
+		--Nortaichian [385] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [386] atacó haciendo 18 de daño.
+		--Wrives [238] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 46
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [238] ataca haciendo: 226 de daño
+		--Nortaichian [386] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [387] atacó haciendo 18 de daño.
+		--Wrives [238] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 47
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [239] ataca haciendo: 0 de daño
+		--Nortaichian [387] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [387] atacó haciendo 36 de daño.
+		--Wrives [239] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 48
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [239] ataca haciendo: 113 de daño
+		--Nortaichian [387] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [388] atacó haciendo 18 de daño.
+		--Wrives [239] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 49
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [239] ataca haciendo: 113 de daño
+		--Nortaichian [388] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [389] atacó haciendo 18 de daño.
+		--Wrives [239] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 50
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [239] ataca haciendo: 226 de daño
+		--Nortaichian [389] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [390] atacó haciendo 18 de daño.
+		--Wrives [239] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 51
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [240] ataca haciendo: 0 de daño
+		--Nortaichian [390] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [390] atacó haciendo 36 de daño.
+		--Wrives [240] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 52
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [240] ataca haciendo: 113 de daño
+		--Nortaichian [390] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [391] atacó haciendo 18 de daño.
+		--Wrives [240] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 53
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [240] ataca haciendo: 113 de daño
+		--Nortaichian [391] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [392] atacó haciendo 18 de daño.
+		--Wrives [240] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 54
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [240] ataca haciendo: 226 de daño
+		--Nortaichian [392] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [393] atacó haciendo 18 de daño.
+		--Wrives [240] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 55
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [241] ataca haciendo: 0 de daño
+		--Nortaichian [393] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [393] atacó haciendo 36 de daño.
+		--Wrives [241] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 56
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [241] ataca haciendo: 113 de daño
+		--Nortaichian [393] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [394] atacó haciendo 18 de daño.
+		--Wrives [241] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 57
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [241] ataca haciendo: 113 de daño
+		--Nortaichian [394] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [395] atacó haciendo 18 de daño.
+		--Wrives [241] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 58
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [241] ataca haciendo: 226 de daño
+		--Nortaichian [395] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [396] atacó haciendo 18 de daño.
+		--Wrives [241] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 59
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [242] ataca haciendo: 0 de daño
+		--Nortaichian [396] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [396] atacó haciendo 36 de daño.
+		--Wrives [242] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 60
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [242] ataca haciendo: 113 de daño
+		--Nortaichian [396] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [397] atacó haciendo 18 de daño.
+		--Wrives [242] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 61
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [242] ataca haciendo: 113 de daño
+		--Nortaichian [397] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [398] atacó haciendo 18 de daño.
+		--Wrives [242] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 62
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [242] ataca haciendo: 226 de daño
+		--Nortaichian [398] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [399] atacó haciendo 18 de daño.
+		--Wrives [242] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 63
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [243] ataca haciendo: 0 de daño
+		--Nortaichian [399] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [399] atacó haciendo 36 de daño.
+		--Wrives [243] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 64
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [243] ataca haciendo: 113 de daño
+		--Nortaichian [399] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [400] atacó haciendo 18 de daño.
+		--Wrives [243] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 65
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [243] ataca haciendo: 113 de daño
+		--Nortaichian [400] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [401] atacó haciendo 18 de daño.
+		--Wrives [243] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 66
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [243] ataca haciendo: 226 de daño
+		--Nortaichian [401] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [402] atacó haciendo 18 de daño.
+		--Wrives [243] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 67
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [244] ataca haciendo: 0 de daño
+		--Nortaichian [402] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [402] atacó haciendo 36 de daño.
+		--Wrives [244] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 68
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [244] ataca haciendo: 113 de daño
+		--Nortaichian [402] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [403] atacó haciendo 18 de daño.
+		--Wrives [244] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 69
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [244] ataca haciendo: 113 de daño
+		--Nortaichian [403] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [404] atacó haciendo 18 de daño.
+		--Wrives [244] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 70
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [244] ataca haciendo: 226 de daño
+		--Nortaichian [404] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [405] atacó haciendo 18 de daño.
+		--Wrives [244] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 71
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [245] ataca haciendo: 0 de daño
+		--Nortaichian [405] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [405] atacó haciendo 36 de daño.
+		--Wrives [245] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 72
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [245] ataca haciendo: 113 de daño
+		--Nortaichian [405] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [406] atacó haciendo 18 de daño.
+		--Wrives [245] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 73
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [245] ataca haciendo: 113 de daño
+		--Nortaichian [406] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
 Final de la batalla!
-Moriste bro
-	-Nortaichian [349] ha descansado y se volvio de piedra.
-	-Nortaichian [348] ha descansado y se volvio de piedra.
-	-Nortaichian [347] ha descansado y se volvio de piedra.
-	-Nortaichian [346] ha descansado y se volvio de piedra.
-	-Nortaichian [345] ha descansado y se volvio de piedra.
-	-Nortaichian [344] ha descansado y se volvio de piedra.
-	-Nortaichian [343] ha descansado y se volvio de piedra.
-	-Nortaichian [342] ha descansado y se volvio de piedra.
-	-Nortaichian [341] ha descansado y se volvio de piedra.
-	-Nortaichian [340] ha descansado y se volvio de piedra.
-	-Nortaichian [339] ha descansado y se volvio de piedra.
-	-Nortaichian [338] ha descansado y se volvio de piedra.
-	-Nortaichian [337] ha descansado y se volvio de piedra.
-	-Nortaichian [336] ha descansado y se volvio de piedra.
-	-Nortaichian [335] ha descansado y se volvio de piedra.
-	-Nortaichian [334] ha descansado y se volvio de piedra.
-	-Nortaichian [333] ha descansado y se volvio de piedra.
-	-Nortaichian [332] ha descansado y se volvio de piedra.
-	-Nortaichian [331] ha descansado y se volvio de piedra.
-	-Nortaichian [330] ha descansado y se volvio de piedra.
-	-Wrives [308] ha descansado. Se rehusa a atacar primero.
-	-Wrives [309] ha descansado. Se rehusa a atacar primero.
-	-Wrives [310] ha descansado. Se rehusa a atacar primero.
-	-Wrives [311] ha descansado. Se rehusa a atacar primero.
-	-Wrives [312] ha descansado. Se rehusa a atacar primero.
-	-Wrives [313] ha descansado. Se rehusa a atacar primero.
-	-Wrives [314] ha descansado. Se rehusa a atacar primero.
-	-Wrives [315] ha descansado. Se rehusa a atacar primero.
-	-Wrives [316] ha descansado. Se rehusa a atacar primero.
-	-Wrives [317] ha descansado. Se rehusa a atacar primero.
-	-Reralopes [395]  se ha concentrado.
-	-Reralopes [394]  se ha concentrado.
-	-Reralopes [393]  se ha concentrado.
-	-Reralopes [392]  se ha concentrado.
-	-Reralopes [391]  se ha concentrado.
-	-Reralopes [390]  se ha concentrado.
-	-Reralopes [389]  se ha concentrado.
-	-Reralopes [388]  se ha concentrado.
-	-Reralopes [387]  se ha concentrado.
-	-Reralopes [386]  se ha concentrado.
-	-Reralopes [385]  se ha concentrado.
-	-Reralopes [384]  se ha concentrado.
-	-Reralopes [383]  se ha concentrado.
-	-Reralopes [382]  se ha concentrado.
-	-Reralopes [381]  se ha concentrado.
-	-Reralopes [380]  se ha concentrado.
-	-Reralopes [379]  se ha concentrado.
-	-Reralopes [378]  se ha concentrado.
-	-Reralopes [377]  se ha concentrado.
-	-Reralopes [376]  se ha concentrado.
-	-Reralopes [375]  se ha concentrado.
-	-Reralopes [374]  se ha concentrado.
-	-Reralopes [373]  se ha concentrado.
-	-Reralopes [372]  se ha concentrado.
-	-Reralopes [371]  se ha concentrado.
-	-Nortaichian [349] ha descansado y se volvio de piedra.
-	-Nortaichian [348] ha descansado y se volvio de piedra.
-	-Nortaichian [347] ha descansado y se volvio de piedra.
-	-Nortaichian [346] ha descansado y se volvio de piedra.
-	-Nortaichian [345] ha descansado y se volvio de piedra.
-	-Nortaichian [344] ha descansado y se volvio de piedra.
-	-Nortaichian [343] ha descansado y se volvio de piedra.
-	-Nortaichian [342] ha descansado y se volvio de piedra.
-	-Nortaichian [341] ha descansado y se volvio de piedra.
-	-Nortaichian [340] ha descansado y se volvio de piedra.
-	-Nortaichian [339] ha descansado y se volvio de piedra.
-	-Nortaichian [338] ha descansado y se volvio de piedra.
-	-Nortaichian [337] ha descansado y se volvio de piedra.
-	-Nortaichian [336] ha descansado y se volvio de piedra.
-	-Nortaichian [335] ha descansado y se volvio de piedra.
-	-Nortaichian [334] ha descansado y se volvio de piedra.
-	-Nortaichian [333] ha descansado y se volvio de piedra.
-	-Nortaichian [332] ha descansado y se volvio de piedra.
-	-Nortaichian [331] ha descansado y se volvio de piedra.
-	-Nortaichian [330] ha descansado y se volvio de piedra.
-	-Wrives [308] ha descansado. Se rehusa a atacar primero.
-	-Wrives [309] ha descansado. Se rehusa a atacar primero.
-	-Wrives [310] ha descansado. Se rehusa a atacar primero.
-	-Wrives [311] ha descansado. Se rehusa a atacar primero.
-	-Wrives [312] ha descansado. Se rehusa a atacar primero.
-	-Wrives [313] ha descansado. Se rehusa a atacar primero.
-	-Wrives [314] ha descansado. Se rehusa a atacar primero.
-	-Wrives [315] ha descansado. Se rehusa a atacar primero.
-	-Wrives [316] ha descansado. Se rehusa a atacar primero.
-	-Wrives [317] ha descansado. Se rehusa a atacar primero.
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+Partiendo hacia el pueblo: 4...
+Resultó ser un pueblo enemigo, debemos vencerlos para poder avanzar!
+Comienza la batalla en el pueblo: 4
+					-----------------------------------
+								Turno: 1
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [246] ataca haciendo: 0 de daño
+		--Nortaichian [408] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [408] atacó haciendo 36 de daño.
+		--Wrives [246] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 2
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [246] ataca haciendo: 113 de daño
+		--Nortaichian [408] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [409] atacó haciendo 18 de daño.
+		--Wrives [246] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 3
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [246] ataca haciendo: 113 de daño
+		--Nortaichian [409] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [410] atacó haciendo 18 de daño.
+		--Wrives [246] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 4
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [246] ataca haciendo: 226 de daño
+		--Nortaichian [410] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [411] atacó haciendo 18 de daño.
+		--Wrives [246] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 5
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [247] ataca haciendo: 0 de daño
+		--Nortaichian [411] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [411] atacó haciendo 36 de daño.
+		--Wrives [247] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 6
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [247] ataca haciendo: 113 de daño
+		--Nortaichian [411] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [412] atacó haciendo 18 de daño.
+		--Wrives [247] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 7
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [247] ataca haciendo: 113 de daño
+		--Nortaichian [412] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [413] atacó haciendo 18 de daño.
+		--Wrives [247] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 8
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [247] ataca haciendo: 226 de daño
+		--Nortaichian [413] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [414] atacó haciendo 18 de daño.
+		--Wrives [247] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 9
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [248] ataca haciendo: 0 de daño
+		--Nortaichian [414] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [414] atacó haciendo 36 de daño.
+		--Wrives [248] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 10
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [248] ataca haciendo: 113 de daño
+		--Nortaichian [414] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [415] atacó haciendo 18 de daño.
+		--Wrives [248] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 11
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [248] ataca haciendo: 113 de daño
+		--Nortaichian [415] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [416] atacó haciendo 18 de daño.
+		--Wrives [248] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 12
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [248] ataca haciendo: 226 de daño
+		--Nortaichian [416] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [417] atacó haciendo 18 de daño.
+		--Wrives [248] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 13
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [249] ataca haciendo: 0 de daño
+		--Nortaichian [417] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [417] atacó haciendo 36 de daño.
+		--Wrives [249] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 14
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [249] ataca haciendo: 113 de daño
+		--Nortaichian [417] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [418] atacó haciendo 18 de daño.
+		--Wrives [249] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 15
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [249] ataca haciendo: 113 de daño
+		--Nortaichian [418] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [419] atacó haciendo 18 de daño.
+		--Wrives [249] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 16
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [249] ataca haciendo: 226 de daño
+		--Nortaichian [419] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [420] atacó haciendo 18 de daño.
+		--Wrives [249] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 17
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [250] ataca haciendo: 0 de daño
+		--Nortaichian [420] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [420] atacó haciendo 36 de daño.
+		--Wrives [250] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 18
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [250] ataca haciendo: 113 de daño
+		--Nortaichian [420] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [421] atacó haciendo 18 de daño.
+		--Wrives [250] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 19
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [250] ataca haciendo: 113 de daño
+		--Nortaichian [421] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [422] atacó haciendo 18 de daño.
+		--Wrives [250] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 20
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [250] ataca haciendo: 226 de daño
+		--Nortaichian [422] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [423] atacó haciendo 18 de daño.
+		--Wrives [250] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 21
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [251] ataca haciendo: 0 de daño
+		--Nortaichian [423] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [423] atacó haciendo 36 de daño.
+		--Wrives [251] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 22
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [251] ataca haciendo: 113 de daño
+		--Nortaichian [423] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [424] atacó haciendo 18 de daño.
+		--Wrives [251] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 23
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [251] ataca haciendo: 113 de daño
+		--Nortaichian [424] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [425] atacó haciendo 18 de daño.
+		--Wrives [251] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 24
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [251] ataca haciendo: 226 de daño
+		--Nortaichian [425] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [426] atacó haciendo 18 de daño.
+		--Wrives [251] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 25
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [252] ataca haciendo: 0 de daño
+		--Nortaichian [426] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [426] atacó haciendo 36 de daño.
+		--Wrives [252] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 26
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [252] ataca haciendo: 113 de daño
+		--Nortaichian [426] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [427] atacó haciendo 18 de daño.
+		--Wrives [252] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 27
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [252] ataca haciendo: 113 de daño
+		--Nortaichian [427] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [428] atacó haciendo 18 de daño.
+		--Wrives [252] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 28
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [252] ataca haciendo: 226 de daño
+		--Nortaichian [428] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [429] atacó haciendo 18 de daño.
+		--Wrives [252] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 29
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [253] ataca haciendo: 0 de daño
+		--Nortaichian [429] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [429] atacó haciendo 36 de daño.
+		--Wrives [253] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 30
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [253] ataca haciendo: 113 de daño
+		--Nortaichian [429] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [430] atacó haciendo 18 de daño.
+		--Wrives [253] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 31
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [253] ataca haciendo: 113 de daño
+		--Nortaichian [430] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [431] atacó haciendo 18 de daño.
+		--Wrives [253] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 32
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [253] ataca haciendo: 226 de daño
+		--Nortaichian [431] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [432] atacó haciendo 18 de daño.
+		--Wrives [253] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 33
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [254] ataca haciendo: 0 de daño
+		--Nortaichian [432] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [432] atacó haciendo 36 de daño.
+		--Wrives [254] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 34
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [254] ataca haciendo: 113 de daño
+		--Nortaichian [432] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [433] atacó haciendo 18 de daño.
+		--Wrives [254] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 35
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [254] ataca haciendo: 113 de daño
+		--Nortaichian [433] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [434] atacó haciendo 18 de daño.
+		--Wrives [254] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 36
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [254] ataca haciendo: 226 de daño
+		--Nortaichian [434] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [435] atacó haciendo 18 de daño.
+		--Wrives [254] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 37
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [255] ataca haciendo: 0 de daño
+		--Nortaichian [435] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [435] atacó haciendo 36 de daño.
+		--Wrives [255] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 38
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [255] ataca haciendo: 113 de daño
+		--Nortaichian [435] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [436] atacó haciendo 18 de daño.
+		--Wrives [255] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 39
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [255] ataca haciendo: 113 de daño
+		--Nortaichian [436] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [437] atacó haciendo 18 de daño.
+		--Wrives [255] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 40
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [255] ataca haciendo: 226 de daño
+		--Nortaichian [437] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [438] atacó haciendo 18 de daño.
+		--Wrives [255] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 41
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [256] ataca haciendo: 0 de daño
+		--Nortaichian [438] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [438] atacó haciendo 36 de daño.
+		--Wrives [256] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 42
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [256] ataca haciendo: 113 de daño
+		--Nortaichian [438] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [439] atacó haciendo 18 de daño.
+		--Wrives [256] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 43
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [256] ataca haciendo: 113 de daño
+		--Nortaichian [439] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [440] atacó haciendo 18 de daño.
+		--Wrives [256] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 44
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [256] ataca haciendo: 226 de daño
+		--Nortaichian [440] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [441] atacó haciendo 18 de daño.
+		--Wrives [256] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 45
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [257] ataca haciendo: 0 de daño
+		--Nortaichian [441] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [441] atacó haciendo 36 de daño.
+		--Wrives [257] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 46
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [257] ataca haciendo: 113 de daño
+		--Nortaichian [441] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [442] atacó haciendo 18 de daño.
+		--Wrives [257] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 47
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [257] ataca haciendo: 113 de daño
+		--Nortaichian [442] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [443] atacó haciendo 18 de daño.
+		--Wrives [257] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 48
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [257] ataca haciendo: 226 de daño
+		--Nortaichian [443] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [444] atacó haciendo 18 de daño.
+		--Wrives [257] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 49
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [258] ataca haciendo: 0 de daño
+		--Nortaichian [444] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [444] atacó haciendo 36 de daño.
+		--Wrives [258] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 50
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [258] ataca haciendo: 113 de daño
+		--Nortaichian [444] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [445] atacó haciendo 18 de daño.
+		--Wrives [258] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 51
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [258] ataca haciendo: 113 de daño
+		--Nortaichian [445] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [446] atacó haciendo 18 de daño.
+		--Wrives [258] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 52
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [258] ataca haciendo: 226 de daño
+		--Nortaichian [446] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [447] atacó haciendo 18 de daño.
+		--Wrives [258] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 53
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [259] ataca haciendo: 0 de daño
+		--Nortaichian [447] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [447] atacó haciendo 36 de daño.
+		--Wrives [259] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 54
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [259] ataca haciendo: 113 de daño
+		--Nortaichian [447] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [448] atacó haciendo 18 de daño.
+		--Wrives [259] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 55
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [259] ataca haciendo: 113 de daño
+		--Nortaichian [448] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [449] atacó haciendo 18 de daño.
+		--Wrives [259] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 56
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [259] ataca haciendo: 226 de daño
+		--Nortaichian [449] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [450] atacó haciendo 18 de daño.
+		--Wrives [259] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 57
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [260] ataca haciendo: 0 de daño
+		--Nortaichian [450] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [450] atacó haciendo 36 de daño.
+		--Wrives [260] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 58
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [260] ataca haciendo: 113 de daño
+		--Nortaichian [450] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [451] atacó haciendo 18 de daño.
+		--Wrives [260] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 59
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [260] ataca haciendo: 113 de daño
+		--Nortaichian [451] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [452] atacó haciendo 18 de daño.
+		--Wrives [260] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 60
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [260] ataca haciendo: 226 de daño
+		--Nortaichian [452] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [453] atacó haciendo 18 de daño.
+		--Wrives [260] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 61
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [261] ataca haciendo: 0 de daño
+		--Nortaichian [453] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [453] atacó haciendo 36 de daño.
+		--Wrives [261] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 62
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [261] ataca haciendo: 113 de daño
+		--Nortaichian [453] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [454] atacó haciendo 18 de daño.
+		--Wrives [261] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 63
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [261] ataca haciendo: 113 de daño
+		--Nortaichian [454] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [455] atacó haciendo 18 de daño.
+		--Wrives [261] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 64
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [261] ataca haciendo: 226 de daño
+		--Nortaichian [455] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [456] atacó haciendo 18 de daño.
+		--Wrives [261] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 65
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [262] ataca haciendo: 0 de daño
+		--Nortaichian [456] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [456] atacó haciendo 36 de daño.
+		--Wrives [262] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 66
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [262] ataca haciendo: 113 de daño
+		--Nortaichian [456] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [457] atacó haciendo 18 de daño.
+		--Wrives [262] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 67
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [262] ataca haciendo: 113 de daño
+		--Nortaichian [457] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [458] atacó haciendo 18 de daño.
+		--Wrives [262] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 68
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [262] ataca haciendo: 226 de daño
+		--Nortaichian [458] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [459] atacó haciendo 18 de daño.
+		--Wrives [262] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 69
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [263] ataca haciendo: 0 de daño
+		--Nortaichian [459] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [459] atacó haciendo 36 de daño.
+		--Wrives [263] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 70
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [263] ataca haciendo: 113 de daño
+		--Nortaichian [459] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [460] atacó haciendo 18 de daño.
+		--Wrives [263] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 71
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [263] ataca haciendo: 113 de daño
+		--Nortaichian [460] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [461] atacó haciendo 18 de daño.
+		--Wrives [263] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 72
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [263] ataca haciendo: 226 de daño
+		--Nortaichian [461] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [462] atacó haciendo 18 de daño.
+		--Wrives [263] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 73
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [264] ataca haciendo: 0 de daño
+		--Nortaichian [462] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [462] atacó haciendo 36 de daño.
+		--Wrives [264] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 74
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [264] ataca haciendo: 113 de daño
+		--Nortaichian [462] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [463] atacó haciendo 18 de daño.
+		--Wrives [264] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 75
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [264] ataca haciendo: 113 de daño
+		--Nortaichian [463] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [464] atacó haciendo 18 de daño.
+		--Wrives [264] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 76
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [264] ataca haciendo: 226 de daño
+		--Nortaichian [464] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [465] atacó haciendo 18 de daño.
+		--Wrives [264] recibe 36 puntos de daño. Su salud era de: -4. Ha muerto! 
+					-----------------------------------
+								Turno: 77
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [265] ataca haciendo: 0 de daño
+		--Nortaichian [465] recibe 0 puntos de daño. Salud restante: 66
+Ataque del ejercito enemigo:
+	-Nortaichian [465] atacó haciendo 36 de daño.
+		--Wrives [265] recibe 72 puntos de daño. Salud restante: 86
+					-----------------------------------
+								Turno: 78
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [265] ataca haciendo: 113 de daño
+		--Nortaichian [465] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [466] atacó haciendo 18 de daño.
+		--Wrives [265] recibe 36 puntos de daño. Salud restante: 50
+					-----------------------------------
+								Turno: 79
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [265] ataca haciendo: 113 de daño
+		--Nortaichian [466] recibe 113 puntos de daño. Su salud era de: 66. Ha muerto! 
+Ataque del ejercito enemigo:
+	-Nortaichian [467] atacó haciendo 18 de daño.
+		--Wrives [265] recibe 36 puntos de daño. Salud restante: 14
+					-----------------------------------
+								Turno: 80
+					-----------------------------------
+Ataque de nuestro ejercito:
+	-Wrives [265] ataca haciendo: 226 de daño
+		--Nortaichian [467] recibe 226 puntos de daño. Su salud era de: 66. Ha muerto! 
+Final de la batalla!
+Nuestro ejercito ha llegado a destino.
