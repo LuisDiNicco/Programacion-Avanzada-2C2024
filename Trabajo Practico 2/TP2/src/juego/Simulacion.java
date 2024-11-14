@@ -34,9 +34,9 @@ public class Simulacion {
 
 		Archivo.leerArchivo(rutaArchivo, this);
 
-		System.out.println("Inicia una nueva aventura para el pueblo: " + puebloInicio + "...");
+		System.out.println("Inicia una nueva aventura para el pueblo: " + (puebloInicio+1) + "...");
 		System.out.println("Su objetivo? ~Reconquistar la tierra de fantasia~");
-		System.out.println("Lograrán nuestros héroes llegar al pueblo: " + puebloFin + "?\n");
+		System.out.println("Lograrán nuestros héroes llegar al pueblo: " + (puebloFin+1) + "?\n");
 
 		Mapa mapa = Mapa.getInstancia();
 
@@ -50,17 +50,18 @@ public class Simulacion {
 		}
 
 		List<Integer> rutaMinima = dijkstra.getRuta(puebloFin);
+		System.out.println("La ruta de menor costo a seguir es: ");
 		System.out.print("[");
 		for (int i = 0; i < rutaMinima.size() - 1; i++) {
 			System.out.print((rutaMinima.get(i) + 1) + ", ");
 		}
 		System.out.print(rutaMinima.get(rutaMinima.size() - 1) + 1);
-		System.out.println("]");
+		System.out.println("]\n");
 
 		int[] predecesores = dijkstra.getVectorPredecesores();
 
 		Stack<Integer> pila = new Stack<>();
-		pila.push(puebloFin - 1);
+		pila.push(puebloFin);
 
 		int i = predecesores[puebloFin];
 		while (i != puebloInicio) {
@@ -100,6 +101,7 @@ public class Simulacion {
 			LogWriter.escribirTextoPartida(proximo);
 
 			System.out.println("Partiendo hacia el pueblo: " + (proximo + 1) + "...");
+			System.out.println("Se encuenta a " + (distancias[proximo] - distancias[predecesores[proximo]]) + " kilometros.");
 
 			int tiempoRecorridoHoras = (int) tiempoRecorrido / 24;
 			tiempoRecorridoHoras *= 24;
@@ -148,6 +150,7 @@ public class Simulacion {
 			System.out.println("El ejército del pueblo " + (miPueblo.getNumeroPueblo() + 1) + " llegó a destino.");
 			System.out.println("Sobrevivieron " + miPueblo.getEjercito().getTamaño() + " soldados!");
 			System.out.println("Luego de " + convertirDiasAHoras(tiempoRecorrido / 24.0) + " llegamos al destino");
+			System.out.println("Tuvieron que recorrer " + distancias[puebloFin] + " kilometros.");
 		} else {
 			System.out.println("\n-----------------------------------------------------------------------");
 			System.out.println("\t\t\tLa aventura duró " + convertirDiasAHoras(tiempoRecorrido / 24.0));
@@ -190,7 +193,7 @@ public class Simulacion {
 							.println("El ejército del pueblo " + (pueblo.getNumeroPueblo() + 1) + " llegó a destino.");
 					System.out.println("Sobrevivieron " + pueblo.getEjercito().getTamaño() + " soldados!");
 				} else {
-					System.out.println("El ejército del pueblo no pudimos llegar a destino");
+					System.out.println("El ejército del pueblo no pudo llegar a destino");
 					System.out.println("Buscaremos una ruta alternativa...");
 					System.out.println("-----------------------------------------------------------------------");
 				}

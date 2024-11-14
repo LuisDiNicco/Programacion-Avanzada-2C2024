@@ -52,7 +52,7 @@ public class Camino implements Comparable<Camino> {
 		camino += (nodos.get(nodos.size() - 1) + 1);
 		camino += "]";
 
-		return camino + " costo " + this.costo;
+		return camino + ", distancia " + this.costo + " kilometros.";
 	}
 
 	public void setCosto(int costo) {
