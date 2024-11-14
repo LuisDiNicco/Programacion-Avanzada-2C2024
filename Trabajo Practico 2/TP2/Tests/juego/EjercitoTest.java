@@ -71,7 +71,7 @@ public class EjercitoTest {
 
 		assertEquals(158, salud);
 	}
-	
+
 	@After
 	public void borrarArchivo() {
 		LogWriter.cerrar();

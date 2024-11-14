@@ -31,7 +31,7 @@ public class Batalla {
 			if (ejercitoAliado.haySoldados()) {
 				ejercitoAliado.reordenarse();
 			} else {
-				LogWriter.escribirLog("Moriste bro");
+				LogWriter.escribirLog("Nuestro ejercito ha muerto.");
 				return;
 			}
 		}

@@ -65,4 +65,24 @@ public class LogWriter {
 
 		escribirLog("Se sumará la mitad de su ejercito");
 	}
+
+	public static void escribirLlegadaADestino() {
+		escribirLog("Nuestro ejercito ha llegado a destino.");
+	}
+
+	public static void escribirMuerteEnBatalla() {
+		escribirLog("Nuestro ejercito no ha podido llegar a destino.");
+	}
+
+	public static void escribirBusquedaCaminosAlternativos() {
+		escribirLog("Buscaremos una ruta alternativa...");
+	}
+
+	public static void escribirNoFuePosibleEncontrarOtroCamino() {
+		escribirLog("No fue posible encontrar otra ruta que resulte en victoria.");
+	}
+
+	public static void escribirNoHayCaminoPosible() {
+		escribirLog("No hay un camino posible entre el pueblo de inicio y el pueblo destino");
+	}
 }

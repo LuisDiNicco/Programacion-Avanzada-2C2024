@@ -73,7 +73,7 @@ public class PuebloTest {
 	public void testGetTipoDePueblo() {
 		assertEquals(TipoDePueblo.ALIADO, pueblo.getTipoDePueblo());
 	}
-	
+
 	@After
 	public void borrarArchivo() {
 		LogWriter.cerrar();
