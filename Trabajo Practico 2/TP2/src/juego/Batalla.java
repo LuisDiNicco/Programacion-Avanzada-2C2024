@@ -26,7 +26,7 @@ public class Batalla {
 					ejercitoAliado.recibirAtaque(dañoAliado);
 				}
 			}
-			
+
 			LogWriter.escribirLog("Final de la batalla!");
 			if (ejercitoAliado.haySoldados()) {
 				ejercitoAliado.reordenarse();

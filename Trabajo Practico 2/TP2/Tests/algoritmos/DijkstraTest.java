@@ -27,7 +27,7 @@ public class DijkstraTest {
 
 	@Test
 	public void testPredecesoresDesdeNodoOrigen() {
-		int[] predecesoresEsperados = { 0, 0, 1, 2 };
+		int[] predecesoresEsperados = { 0, 0, 1, 0 };
 		assertArrayEquals(predecesoresEsperados, dijkstra.getVectorPredecesores());
 	}
 

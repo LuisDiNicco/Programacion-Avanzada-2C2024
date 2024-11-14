@@ -90,8 +90,6 @@ public class Reralopes extends Raza {
 		LogWriter.escribirLog("\t-Reralopes [" + this.idUnico + "]  se ha concentrado.");
 	}
 
-	// ---------------Getters-------------------//
-
 	public boolean isConcentrado() {
 		return concentrado;
 	}

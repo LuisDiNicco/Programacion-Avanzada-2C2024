@@ -6,7 +6,6 @@ import archivo.*;
 import colaDePrioridad.Camino;
 import colaDePrioridad.ColaDePrioridad;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 import algoritmos.*;
@@ -19,8 +18,6 @@ public class Simulacion {
 		super();
 	}
 
-	// ---------------Setters-------------------//
-
 	public void setPuebloInicio(int puebloInicio) {
 		this.puebloInicio = puebloInicio;
 	}
@@ -29,7 +26,6 @@ public class Simulacion {
 		this.puebloFin = puebloFin;
 	}
 
-	// ---------------Metodos-------------------//
 	public void iniciarSimulacion(String rutaArchivo, String rutaLog) {
 		System.out.println("-----------------------------------------------------------------------");
 		System.out.println("\t\t\tInicio de la Aventura");
@@ -38,9 +34,9 @@ public class Simulacion {
 
 		Archivo.leerArchivo(rutaArchivo, this);
 
-		System.out.println("Inicia una nueva aventura para el pueblo: " + puebloInicio + "...");
+		System.out.println("Inicia una nueva aventura para el pueblo: " + (puebloInicio+1) + "...");
 		System.out.println("Su objetivo? ~Reconquistar la tierra de fantasia~");
-		System.out.println("Lograrán nuestros héroes llegar al pueblo: " + puebloFin + "?\n");
+		System.out.println("Lograrán nuestros héroes llegar al pueblo: " + (puebloFin+1) + "?\n");
 
 		Mapa mapa = Mapa.getInstancia();
 
@@ -48,28 +44,32 @@ public class Simulacion {
 		dijkstra.calcularDistanciaDijkstra();
 
 		int[] distancias = dijkstra.getVectorDistancia();
-		if (distancias[puebloFin - 1] == Integer.MAX_VALUE) {
+		if (distancias[puebloFin] == Integer.MAX_VALUE) {
 			System.out.println("Es imposible llegar desde el pueblo de inicio hasta el destino.");
 			return;
 		}
 
-		ArrayList<Integer> rutaMinima = dijkstra.getRuta(puebloInicio - 1, puebloFin - 1);
-		System.out.println(
-				"La ruta planeada para llegar desde el pueblo " + puebloInicio + " hasta el " + puebloFin + " es:");
-		System.out.println(rutaMinima + "\n");
+		List<Integer> rutaMinima = dijkstra.getRuta(puebloFin);
+		System.out.println("La ruta de menor costo a seguir es: ");
+		System.out.print("[");
+		for (int i = 0; i < rutaMinima.size() - 1; i++) {
+			System.out.print((rutaMinima.get(i) + 1) + ", ");
+		}
+		System.out.print(rutaMinima.get(rutaMinima.size() - 1) + 1);
+		System.out.println("]\n");
 
 		int[] predecesores = dijkstra.getVectorPredecesores();
 
 		Stack<Integer> pila = new Stack<>();
-		pila.push(puebloFin - 1);
+		pila.push(puebloFin);
 
-		int i = predecesores[puebloFin - 1];
-		while (i != puebloInicio - 1) {
+		int i = predecesores[puebloFin];
+		while (i != puebloInicio) {
 			pila.push(i);
 			i = predecesores[i];
 		}
 
-		Pueblo miPueblo = mapa.getPueblo(puebloInicio - 1);
+		Pueblo miPueblo = mapa.getPueblo(puebloInicio);
 
 		int proximo = puebloInicio;
 
@@ -77,7 +77,7 @@ public class Simulacion {
 		LogWriter.escribirTextoIncioBatalla(proximo);
 
 		System.out.println("Comienza la aventura!");
-		System.out.println("Partimos desde el pueblo: " + proximo + "\n");
+		System.out.println("Partimos desde el pueblo: " + (proximo + 1) + "\n");
 
 		int kmRecorrido = 0;
 		double tiempoRecorrido = 0;
@@ -101,6 +101,7 @@ public class Simulacion {
 			LogWriter.escribirTextoPartida(proximo);
 
 			System.out.println("Partiendo hacia el pueblo: " + (proximo + 1) + "...");
+			System.out.println("Se encuenta a " + (distancias[proximo] - distancias[predecesores[proximo]]) + " kilometros.");
 
 			int tiempoRecorridoHoras = (int) tiempoRecorrido / 24;
 			tiempoRecorridoHoras *= 24;
@@ -122,7 +123,6 @@ public class Simulacion {
 
 				System.out.println("-Resultó ser un pueblo enemigo, debemos vencerlos para poder avanzar!\n");
 				System.out.println("-Empieza la batalla!");
-				// System.out.println("-----------------------------------------------------------------------");
 				System.out.println("-[Batalla en progreso...]");
 				Batalla.batalla(miPueblo, puebloAVisitar);
 				System.out.println("-Final de la batalla!");
@@ -150,6 +150,7 @@ public class Simulacion {
 			System.out.println("El ejército del pueblo " + (miPueblo.getNumeroPueblo() + 1) + " llegó a destino.");
 			System.out.println("Sobrevivieron " + miPueblo.getEjercito().getTamaño() + " soldados!");
 			System.out.println("Luego de " + convertirDiasAHoras(tiempoRecorrido / 24.0) + " llegamos al destino");
+			System.out.println("Tuvieron que recorrer " + distancias[puebloFin] + " kilometros.");
 		} else {
 			System.out.println("\n-----------------------------------------------------------------------");
 			System.out.println("\t\t\tLa aventura duró " + convertirDiasAHoras(tiempoRecorrido / 24.0));
@@ -161,16 +162,13 @@ public class Simulacion {
 
 			boolean caminoExitoso = false;
 			int[][] grafo = mapa.getGrafo();
-			//int N = 2;
 
-			//SolucionAlternativa solucionaAlternativa = new SolucionAlternativa(grafo);
-			//List<Camino> listaCaminos = new LinkedList<Camino>();
-			BuscarTodosLosCaminos busquedaCaminos= new BuscarTodosLosCaminos(grafo);
-			busquedaCaminos.encontrarTodosLosCaminos(puebloInicio -1, puebloFin-1);
+			BuscarTodosLosCaminos busquedaCaminos = new BuscarTodosLosCaminos(grafo);
+			busquedaCaminos.encontrarTodosLosCaminos(puebloInicio, puebloFin);
 			ColaDePrioridad colaDePrioridad = busquedaCaminos.getColaDePrioridad();
+			Camino camino = colaDePrioridad.extraerMin();
 
 			while (caminoExitoso == false) {
-				//listaCaminos = solucionaAlternativa.encontrarCaminoNMinimo(puebloInicio - 1, puebloFin - 1, N);
 
 				if (colaDePrioridad.estaVacio()) {
 					System.out.println(
@@ -178,23 +176,29 @@ public class Simulacion {
 					System.out.println("En cada uno de los caminos posibles nuestro ejercito muere en batalla.");
 					break;
 				}
-				Pueblo pueblo = mapa.getPueblo(puebloInicio - 1);
-				Camino camino = colaDePrioridad.extraerMin();
+
+				Pueblo pueblo = mapa.getPueblo(puebloInicio);
+				camino = colaDePrioridad.extraerMin();
+
+				if (camino == dijkstra.getRuta(puebloFin)) {
+					continue;
+				}
+
 				System.out.println("Siguiendo el Camino: " + camino);
-				//caminoExitoso = simularBatalla(listaCaminos, N, mapa);
-				caminoExitoso = simularBatalla(camino,pueblo,mapa);
-				//N++;
-				if(caminoExitoso == true) {
-					System.out.println("El ejército del pueblo " + (pueblo.getNumeroPueblo() + 1) + " llegó a destino.");
+
+				caminoExitoso = simularBatalla(camino, pueblo, mapa);
+
+				if (caminoExitoso == true) {
+					System.out
+							.println("El ejército del pueblo " + (pueblo.getNumeroPueblo() + 1) + " llegó a destino.");
 					System.out.println("Sobrevivieron " + pueblo.getEjercito().getTamaño() + " soldados!");
-					//System.out.println("Luego de " + convertirDiasAHoras(tiempoRecorrido / 24.0) + " llegamos al destino");
-				}else {
-		            System.out.println("El ejército del pueblo no pudimos llegar a destino");
+				} else {
+					System.out.println("El ejército del pueblo no pudo llegar a destino");
 					System.out.println("Buscaremos una ruta alternativa...");
 					System.out.println("-----------------------------------------------------------------------");
 				}
 			}
-			
+
 		}
 		System.out.println("\n-----------------------------------------------------------------------");
 		System.out.println("\t\t\tFin de la aventura");
@@ -203,9 +207,8 @@ public class Simulacion {
 		LogWriter.cerrar();
 	}
 
-	private boolean simularBatalla(Camino camino,Pueblo miPueblo,Mapa mapa) {
+	private boolean simularBatalla(Camino camino, Pueblo miPueblo, Mapa mapa) {
 
-		//Camino camino = listaCaminos.get(N - 1);
 		List<Integer> listaNodos = camino.getNodos();
 
 		int proximo = puebloInicio;

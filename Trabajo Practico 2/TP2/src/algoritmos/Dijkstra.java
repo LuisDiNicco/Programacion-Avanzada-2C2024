@@ -1,7 +1,8 @@
 package algoritmos;
 
-import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Dijkstra {
 
@@ -33,32 +34,29 @@ public class Dijkstra {
 	}
 
 	public void calcularDistanciaDijkstra() {
-		boolean[] visitado = new boolean[cantNodos];
 
-		visitado[nodoOrigen] = true;
-
-		for (int i = 0; i < cantNodos; i++) {
+		for (int i = 0; i < grafo.length; i++) {
 			distancia[i] = grafo[nodoOrigen][i];
 		}
 
-		int w = minimo(visitado);
-		int NodoActual = nodoOrigen;
-		while (w != -1) {
+		boolean[] visitado = new boolean[cantNodos];
+		distancia[nodoOrigen] = 0;
 
-			predecesores[w] = NodoActual;
+		for (int step = 0; step < cantNodos; step++) {
+			int w = minimo(visitado);
+			if (w == -1)
+				break;
 			visitado[w] = true;
 
-			for (int i = 0; i < cantNodos; i++) {
-				if (visitado[i] == false) {
-					if (grafo[w][i] != Integer.MAX_VALUE) {
-						if (grafo[w][i] + distancia[w] < distancia[i]) {
-							this.distancia[i] = grafo[w][i] + distancia[w];
-						}
+			for (int j = 0; j < cantNodos; j++) {
+				if (!visitado[j] && grafo[w][j] != Integer.MAX_VALUE) {
+					int nuevaDistancia = grafo[w][j] + distancia[w];
+					if (nuevaDistancia < distancia[j]) {
+						distancia[j] = nuevaDistancia;
+						predecesores[j] = w;
 					}
 				}
 			}
-			NodoActual = w;
-			w = minimo(visitado);
 		}
 	}
 
@@ -80,20 +78,15 @@ public class Dijkstra {
 		return distancia[otroNodo - 1];
 	}
 
-	public ArrayList<Integer> getRuta(int inicio, int nodoFin) {
-		ArrayList<Integer> ruta = new ArrayList<>();
+	public List<Integer> getRuta(int nodoFin) {
+		List<Integer> ruta = new LinkedList<Integer>();
 		int nodoActual = nodoFin;
 
-		if (predecesores[nodoFin] == 0 && inicio != nodoFin) {
-			System.out.println("No existe un camino entre el nodo inicio y el nodo fin.");
-			return ruta;
-		}
-
-		while (nodoActual != inicio) {
+		while (nodoActual != nodoOrigen) {
 			ruta.add(nodoActual);
 			nodoActual = predecesores[nodoActual];
 		}
-		ruta.add(inicio);
+		ruta.add(nodoOrigen);
 
 		Collections.reverse(ruta);
 

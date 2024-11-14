@@ -2,7 +2,7 @@ package raza;
 
 import java.util.Objects;
 
-public abstract class Raza implements Pelea {
+public abstract class Raza implements Combatible {
 	protected static int id = 0;
 
 	protected int idUnico;
@@ -26,14 +26,11 @@ public abstract class Raza implements Pelea {
 		this.tipoArma = tipoArma;
 	}
 
-	// ---------------Metodos-------------------//
 	public abstract int atacar();
 
 	public abstract void recibirAtaque(int daño);
 
 	public abstract void descansar();
-
-	// ---------------Getters-------------------//
 
 	public String getNombreRaza() {
 		return nombreRaza.name();
@@ -71,8 +68,6 @@ public abstract class Raza implements Pelea {
 	public int hashCode() {
 		return Objects.hash(idUnico);
 	}
-
-	// ---------------Metodos-------------------//
 
 	@Override
 	public boolean equals(Object obj) {

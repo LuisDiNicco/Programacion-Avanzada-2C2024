@@ -6,7 +6,6 @@ public class EstadoEnfurecidoNortaichian implements EstadoNortaichian {
 
 	@Override
 	public int atacar(Nortaichian origen) {
-		// Revisar bien la cantidad de turnos
 		int daño;
 
 		if (origen.getCantidadTurnoEnEstadoEnfurecido() == 2) {

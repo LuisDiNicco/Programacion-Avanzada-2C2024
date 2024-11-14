@@ -18,8 +18,6 @@ public class Radaiteran extends Raza {
 		this.cantidadAtaques = 0;
 	}
 
-	// ---------------Metodos-------------------//
-
 	@Override
 	public int atacar() {
 		int dañoExtra = 3 * cantidadAtaques;
