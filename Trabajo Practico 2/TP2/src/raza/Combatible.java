@@ -1,6 +1,6 @@
 package raza;
 
-public interface Pelea {
+public interface Combatible {
 
 	public abstract int atacar();
 

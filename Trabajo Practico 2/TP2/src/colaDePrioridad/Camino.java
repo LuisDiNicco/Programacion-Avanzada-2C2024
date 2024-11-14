@@ -2,6 +2,7 @@ package colaDePrioridad;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Camino implements Comparable<Camino> {
 
@@ -11,6 +12,23 @@ public class Camino implements Comparable<Camino> {
 	public Camino(List<Integer> nodos, int costo) {
 		this.nodos = new ArrayList<>(nodos);
 		this.costo = costo;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(costo, nodos);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Camino other = (Camino) obj;
+		return costo == other.costo && Objects.equals(nodos, other.nodos);
 	}
 
 	public int compareTo(Camino camino2) {
@@ -27,7 +45,14 @@ public class Camino implements Comparable<Camino> {
 
 	@Override
 	public String toString() {
-		return "Camino "+ nodos+ " con costo = " + costo + "";
+		String camino = "[";
+		for (int i = 0; i < nodos.size() - 1; i++) {
+			camino += ((nodos.get(i) + 1) + ", ");
+		}
+		camino += (nodos.get(nodos.size() - 1) + 1);
+		camino += "]";
+
+		return camino + " costo " + this.costo;
 	}
 
 	public void setCosto(int costo) {

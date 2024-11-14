@@ -23,8 +23,6 @@ public class Nortaichian extends Raza {
 		this.estado = new EstadoNormalNortaichian();
 	}
 
-	// ---------------Metodos-------------------//
-
 	@Override
 	public int atacar() {
 		int saludActual = salud;
@@ -64,8 +62,6 @@ public class Nortaichian extends Raza {
 		LogWriter.escribirLog("\t-Nortaichian [" + this.idUnico + "] ha descansado y se volvio de piedra.");
 	}
 
-	// ---------------Metodos de Apoyo-------------------//
-
 	public void bajarSalud(int daño) {
 		this.salud -= daño;
 	}
@@ -74,8 +70,6 @@ public class Nortaichian extends Raza {
 		int curacion = (int) (saludMaxima * porcentajeCuracion / 100);
 		salud = (curacion + salud) > saludMaxima ? saludMaxima : curacion + salud;
 	}
-
-	// ---------------Metodos para cambiar de Estado-------------------//
 
 	public void cambiarAEstadoNormal() {
 		this.estado = new EstadoNormalNortaichian();
@@ -92,8 +86,6 @@ public class Nortaichian extends Raza {
 		this.estado = new EstadoDePiedraNortaichian();
 		this.cantidadTurnoEnEstadoDePiedra = 0;
 	}
-
-	// ---------------Getters-------------------//
 
 	public EstadoNortaichian getEstado() {
 		return this.estado;
